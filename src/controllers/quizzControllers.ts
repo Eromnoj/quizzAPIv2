@@ -68,7 +68,7 @@ export const getFilteredQuizzes = async (req: Request, res: Response) => {
   console.log('Limit:', limit);
   const categoryId = await prisma.category.findFirst({
     where: {
-      slug: category as string,
+      slug: category as string ?? null,
     },
     select: {
       id: true,
