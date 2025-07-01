@@ -71,7 +71,7 @@ export async function getQuizzById(id: string) {
   return quiz;
 }
 
-export async function getQuizzesFiltered(data: { difficulty: Difficulty, categoryId: string, maxResults: number, categorySlug?: string }) {
+export async function getQuizzesFiltered(data: { difficulty: Difficulty, categoryId: string, maxResults?: number, categorySlug?: string }) {
 
   // if no maxResults is provided, default to 5
   // if (!data.maxResults || data.maxResults <= 0) {
@@ -87,9 +87,6 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
   if (data.categoryId) {
     where.categoryId = data.categoryId;
   }
-  if (data.maxResults && data.maxResults > 0) {
-    where.maxResults = data.maxResults;
-  }
   where.pending = false; // only get quizzes that are not pending
   // get quizzes randomly from all quizzes with the given difficulty and categoryId
   const quizzes = await prisma.quiz.findMany({
@@ -101,8 +98,7 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
       id: quiz.id,
       question: quiz.question,
       answer: quiz.answer,
-      categoryId: quiz.categoryId,
-      category: data.categorySlug, // if categorySlug is provided, add it to the quiz
+      categoryId: quiz.categoryId,// if categorySlug is provided, add it to the quiz
       difficulty: quiz.difficulty,
       badAnswers: [
         quiz.badAnswer1,
@@ -113,9 +109,9 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
   });
   // shuffle the quizzes and take the first maxResults
   const shuffledQuizzes = retQuizzes.sort(() => 0.5 - Math.random());
-  if (shuffledQuizzes.length > data.maxResults) {
+  if (data.maxResults && shuffledQuizzes.length > data.maxResults) {
     return {
-      count: shuffledQuizzes.length,
+      count: data.maxResults,
       quizzes:
         shuffledQuizzes.slice(0, data.maxResults)
     };
@@ -128,12 +124,16 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
     };
   }
   // if there are not enough quizzes, return all of them
-  if (shuffledQuizzes.length < data.maxResults) {
+  if (data.maxResults && shuffledQuizzes.length < data.maxResults) {
     return {
       count: shuffledQuizzes.length,
       quizzes: shuffledQuizzes
     };
   }
+  return {
+    count: shuffledQuizzes.length,
+    quizzes: shuffledQuizzes
+  };
 }
 
 export async function getQuizzesPending() {
