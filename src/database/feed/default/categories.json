@@ -1,0 +1,30 @@
+[
+  {
+    "name": "musique",
+    "slug": "musique"
+  },
+  {
+    "name": "culture générale",
+    "slug": "culture_generale"
+  },
+  {
+    "name": "Arts et littérature",
+    "slug": "art_litterature"
+  },
+  {
+    "name": "TV et cinéma",
+    "slug": "tv_cinema"
+  },
+  {
+    "name": "Actualités et politique",
+    "slug": "actu_politique"
+  },
+  {
+    "name": "sport",
+    "slug": "sport"
+  },
+  {
+    "name": "Jeux vidéos",
+    "slug": "jeux_videos"
+  }
+]

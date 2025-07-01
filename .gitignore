@@ -1,0 +1,9 @@
+.env
+
+node_modules
+
+*/node_modules
+/src/public/img
+/dist
+
+/prisma/migrations

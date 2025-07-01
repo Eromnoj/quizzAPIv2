@@ -1,0 +1,3600 @@
+[
+        {
+            "question": "Jeff Koons est surtout connu pour ses ... ?",
+            "answer": "Sculptures",
+            "badAnswers": [
+                "Tags",
+                "Peintures",
+                "Dessins"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel génie italien de la Renaissance a peint en 1512 la fresque intitulée : 'La création d'Adam' ?",
+            "answer": "Michel-Ange",
+            "badAnswers": [
+                "Raphael",
+                "Bellini",
+                "Botticelli"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Klein a déposé une couleur qui porte son nom ...",
+            "answer": "Bleu",
+            "badAnswers": [
+                "Noir",
+                "Rouge",
+                "Violet"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel est l'acteur principal de la série Breaking Bad ?",
+            "answer": "Bryan Cranston",
+            "badAnswers": [
+                "Josh Radnor",
+                "Matt Damon",
+                "Andrew Lincoln"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Qui est le premier interprète du Doctor Who ?",
+            "answer": "William Hartnell",
+            "badAnswers": [
+                "Richard Hurndall",
+                "David Bradley",
+                "Matt Smith"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Comment s'appelle le héro de la licence Metal Gear ?",
+            "answer": "Solid Snake",
+            "badAnswers": [
+                "Big Boss",
+                "Liquid Snake",
+                "Link"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Lequel de ses personnages n'est pas disponible dans le jeu Street of Rage ?",
+            "answer": "Rick Thunder",
+            "badAnswers": [
+                "Adam Hunter",
+                "Axel Stone",
+                "Blaze Fielding"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Qui est le compositeur du thème principal de Tetris, Korobeïniki ?",
+            "answer": "Nikolaï Nekrassov",
+            "badAnswers": [
+                "Piotr Tchaïkovski",
+                "Hirokazu Tanaka",
+                "Alexandre Nikolaïevitch Skriabin"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "A quel développeur est associé la série de jeux vidéos Civilization ?",
+            "answer": "Sid Meier",
+            "badAnswers": [
+                "Tom Clancy",
+                "Jeff Kaplan",
+                "Markus Persson"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel animal est Sonic ?",
+            "answer": "Hérisson",
+            "badAnswers": [
+                "Raton-laveur",
+                "Chien",
+                "Blaireau"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "question": "En quelle année les jeux FIFA Football ont-ils commencé à être édités ?",
+            "answer": "1993",
+            "badAnswers": [
+                "1994",
+                "1998",
+                "2000"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Le film 'Quatre garçons dans le vent' met en scène quel groupe de musique ?",
+            "answer": "Les Beatles",
+            "badAnswers": [
+                "Les Rolling stones",
+                "The Animals",
+                "Evanescence"
+            ],
+            "category": "musique",
+            "difficulty": "facile"
+        },
+        {
+            "question": "En quelle année est sorti le premier album du groupe Indochine, 'L'aventurier' ?",
+            "answer": "1982",
+            "badAnswers": [
+                "1983",
+                "1985",
+                "1980"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel était le surnom donné à Michael Jackson ?",
+            "answer": "King of the Pop",
+            "badAnswers": [
+                "King of Rock",
+                "King of Music",
+                "King of Danse"
+            ],
+            "category": "musique",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel nom porte le logiciel de traitement de texte mis au point par Microsoft ?",
+            "answer": "Word",
+            "badAnswers": [
+                "Access",
+                "Excel",
+                "PowerPoint"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "A quelle classe animale le scorpion appartient-il ?",
+            "answer": "Aux arachnides",
+            "badAnswers": [
+                "Aux mammifères",
+                "Aux reptiles",
+                "Aux insectes"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel oiseau palmipède a pour particularité de construire un nid flottant ?",
+            "answer": "La grèbe",
+            "badAnswers": [
+                "La grèle",
+                "La grève",
+                "La grène"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Comment appelle-t-on le versant de la montagne non situé au soleil ?",
+            "answer": "Ubac",
+            "badAnswers": [
+                "Adret",
+                "Etant",
+                "Ressac"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Qui fut le premier européen à arriver aux Philippines ?",
+            "answer": "Magellan",
+            "badAnswers": [
+                "Christophe Colomb",
+                "Vasco de Gama",
+                "Mauperthuis"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Avec quoi mesure-t-on la pronfondeur des océans ?",
+            "answer": "Un sonar",
+            "badAnswers": [
+                "Un sextant",
+                "Un radar",
+                "Un compteur Geiger"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Dans quelles aventures retrouve-t-on les personnages de Loïs et Clark ?",
+            "answer": "Superman",
+            "badAnswers": [
+                "Hulk",
+                "Spiderman",
+                "Batman"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Dans le langage familier, comment appelle-t-on la dente du petit enfant ?",
+            "answer": "Quenotte",
+            "badAnswers": [
+                "Marmotte",
+                "Menotte",
+                "Bouillotte"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Qui a écrit 'La Valise en carton' ?",
+            "answer": "Linda de Suza",
+            "badAnswers": [
+                "Victor Hugo",
+                "Bernard Werber",
+                "Amélie Nothomb"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel est l'animal emblématique de l'Australie ?",
+            "answer": "Kangourou",
+            "badAnswers": [
+                "Koala",
+                "Crocodile",
+                "Émeu"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel est le plus grand désert du monde ?",
+            "answer": "Sahara",
+            "badAnswers": [
+                "Kalahari",
+                "Gobi",
+                "Australien"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel est le mouvement artistique d'Andy Warhol ?",
+            "answer": "Pop Art",
+            "badAnswers": [
+                "Street Art",
+                "Land Art",
+                "Art Abstrait"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Jean-Michel Basquiat est décédé à quel âge ?",
+            "answer": "27 ans",
+            "badAnswers": [
+                "19 ans",
+                "33 ans",
+                "39 ans"
+            ],
+            "category": "art_litterature",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Qui a emballé l'Arc de Triomphe à Paris ?",
+            "answer": "Christo",
+            "badAnswers": [
+                "Tati",
+                "Yoko Ono",
+                "Ben"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "question": "L'actrice Brigitte Bardot a joué dans le film ... ?",
+            "answer": "Et Dieu... créa la femme",
+            "badAnswers": [
+                "Jules et Jim",
+                "La piscine",
+                "Belle de Jour"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel est la particularité de l'artiste Banksy ?",
+            "answer": "Identité inconnue",
+            "badAnswers": [
+                "Homme Politique",
+                "Drag Queen",
+                "Pas encore majeur"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Le film Trainspotting décrit la démarche d'un ... ?",
+            "answer": "Drogué",
+            "badAnswers": [
+                "Stripteaser",
+                "Tueur en série",
+                "Contrôleur de train"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Dans quelle série a joué l'acteur Jim Parsons ?",
+            "answer": "The Big Bang Theory",
+            "badAnswers": [
+                "How I met your mother",
+                "Game of Thrones",
+                "La petite maison dans la prairie"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Qui animait le jeu télévisé le Bigdil ?",
+            "answer": "Vincent Lagaf'",
+            "badAnswers": [
+                "Philippe Risoli",
+                "Laurence Boccolini",
+                "Nagui"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Sur quelle plateforme a été lancé la licence Final Fantasy ?",
+            "answer": "Nintendo Famicom",
+            "badAnswers": [
+                "Sony PlayStation",
+                "Microsoft Xbox",
+                "Sega Megadrive"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel acteur joue le rôle de Hubert Bonisseur de la Bath dans le film 'OSS 117: Le Caire, nid d'espions' ?",
+            "answer": "Jean Dujardin",
+            "badAnswers": [
+                "Christian Clavier",
+                "Guillaume Canet",
+                "Neil Patrick Harris"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Qui est le premier héro dans Assassin's Creed ?",
+            "answer": "Altaïr",
+            "badAnswers": [
+                "Connor Kenway",
+                "Ezio Auditore",
+                "John White"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Dans la version originale de 'Street Fighter II: The world Warrior', combien y a-t-il de personnages jouables ?",
+            "answer": "8",
+            "badAnswers": [
+                "12",
+                "10",
+                "6"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Comment s'appelle l'héroïne des jeux Metroid ?",
+            "answer": "Samus",
+            "badAnswers": [
+                "Sheamus",
+                "Darius",
+                "Prepus"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Qui est le compositeur des Quatre Saisons ?",
+            "answer": "Antonio Vivaldi",
+            "badAnswers": [
+                "Johann Sebastian Bach",
+                "Wolfgang Amadeus Mozart",
+                "Wilhelm Richard Wagner"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel groupe chante 'Roxanne ?",
+            "answer": "Police",
+            "badAnswers": [
+                "INXS",
+                "Nirvana",
+                "Scorpion"
+            ],
+            "category": "musique",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Calvin Cordozar Broadus, Jr. est le véritable nom de quel rappeur Américain ?",
+            "answer": "Snoop Dogg",
+            "badAnswers": [
+                "Dr. DRE",
+                "Coolio",
+                "2Pac"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Comment appelle-t-on le fruit du plaqueminier ?",
+            "answer": "Kaki",
+            "badAnswers": [
+                "Kakou",
+                "Kacha",
+                "Kali"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "question": "Au Moyen-Âge, comment appelait-on les villages fortifiés ?",
+            "answer": "Bastide",
+            "badAnswers": [
+                "Tour",
+                "Château fort",
+                "Rempart"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "question": "A quel groupe musical international doit-on la bande originale du film 'Flash Gordon ?",
+            "answer": "Queen",
+            "badAnswers": [
+                "Yes",
+                "Led Zeppelin",
+                "The Doors"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952784e",
+            "question": "Dans le film Le Magnifique, Jean-Paul Belmondo joue le rôle d'un ... ?",
+            "answer": "Ecrivain",
+            "badAnswers": [
+                "Militaire",
+                "Inspecteur",
+                "Milliardaire"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952787c",
+            "question": "Quel insecte appelle-t-on aussi la bête à bon dieu ?",
+            "answer": "La coccinelle",
+            "badAnswers": [
+                "La luciole",
+                "Le scarabée",
+                "La libellule"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952787e",
+            "question": "Combien de temps dure le mandat du président des Etats-Unis ?",
+            "answer": "4 ans",
+            "badAnswers": [
+                "5 ans",
+                "6 ans",
+                "7 ans"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527883",
+            "question": "Quelle est la plus grande tortue marine connue à ce jour ?",
+            "answer": "La tortue luth",
+            "badAnswers": [
+                "La tortue franche",
+                "La tortue ninja",
+                "La tortue argneuse"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527887",
+            "question": "Quelle capitale actuelle était appelée 'Philadelphia' du temps des Romains ?",
+            "answer": "Amman",
+            "badAnswers": [
+                "Téhéran",
+                "Damas",
+                "Bagdad"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952788a",
+            "question": "Quel arbre est connu pour être le plus grand au monde ?",
+            "answer": "Le séquoia",
+            "badAnswers": [
+                "Le chêne",
+                "Le pin",
+                "Le hêtre"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527866",
+            "question": "Qui a chanté Joe le taxi ?",
+            "answer": "Vanessa Paradis",
+            "badAnswers": [
+                "Lio",
+                "Mylène Farmer",
+                "Brigitte Bardot"
+            ],
+            "category": "musique",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "645f8720bca7a5cfa9166e12",
+            "question": "Dans quelle ville se trouve la Tour Eiffel ?",
+            "answer": "Paris",
+            "badAnswers": [
+                "Marseille",
+                "Lyon",
+                "Bordeaux"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527848",
+            "question": "Rocky est un film qui parle de vie d'un ... ?",
+            "answer": "Boxeur",
+            "badAnswers": [
+                "Avocat",
+                "Chanteur",
+                "Journaliste"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952784a",
+            "question": "Quel symbole récompense le meilleur film au festival de Berlin ?",
+            "answer": "Ours d'or",
+            "badAnswers": [
+                "Léopard d'or",
+                "Pyramide d'or",
+                "Lion d'or"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952784b",
+            "question": "Qui a réalisé le film Titanic ?",
+            "answer": "James Cameron",
+            "badAnswers": [
+                "Steven Spielberg",
+                "David Lynch",
+                "Chirstopher Nolan"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952783e",
+            "question": "Trois études pour un autoportrait est un tableau de ...",
+            "answer": "Francis Bacon",
+            "badAnswers": [
+                "Pablo Picasso",
+                "Salvador Dali",
+                "René Magritte"
+            ],
+            "category": "art_litterature",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527865",
+            "question": "Quel est le nom du premier album des Black Eyed Peas ?",
+            "answer": "Behind the Front",
+            "badAnswers": [
+                "Bridging the Gap",
+                "Elephunk",
+                "Monkey Business"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952784d",
+            "question": "Lequel de ces films n'a pas été réalisé par Quentin Tarentino ?",
+            "answer": "Matrix",
+            "badAnswers": [
+                "Pulp Fiction",
+                "Kill Bill",
+                "Les huit salopards"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527867",
+            "question": "Quel était l'instrument de prédilection de Louis Armstrong ?",
+            "answer": "La Trompette",
+            "badAnswers": [
+                "La guitare",
+                "La contre-basse",
+                "La clarinette"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952786d",
+            "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+            "answer": "Wellington",
+            "badAnswers": [
+                "Auckland",
+                "Dublin",
+                "Sydney"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952786e",
+            "question": "Quel titre de noblesse est immédiatement inférieur à celui de comte ?",
+            "answer": "Vicomte",
+            "badAnswers": [
+                "Archiduc",
+                "Duc",
+                "Marquis"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527873",
+            "question": "Quel pays a pour capital Katmandou ?",
+            "answer": "Le Népal",
+            "badAnswers": [
+                "Le Tibet",
+                "La Corée du Sud",
+                "Le Pakistan"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527871",
+            "question": "Comment est également appelée la 'Transat Jacques Vabre' ?",
+            "answer": "Route du café",
+            "badAnswers": [
+                "Route du rhum",
+                "Vendée Globe",
+                "Trophée du rhum"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952787a",
+            "question": "Quelle est la seule valeur à la roulette à porter la couleur verte ?",
+            "answer": "Le zéro",
+            "badAnswers": [
+                "Le cinquante",
+                "Le quarante",
+                "Le treize"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527878",
+            "question": "Quel peintre, né en 1844, est également appelé 'le Douanier' ?",
+            "answer": "Henri Rousseau",
+            "badAnswers": [
+                "Pablo Picasso",
+                "Edgar Degas",
+                "Salvador Dali"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952787b",
+            "question": "Quelle est la plus petite unité de mémoire utilisable sur un ordinateur ?",
+            "answer": "Le bit",
+            "badAnswers": [
+                "Le byte",
+                "Le mega",
+                "Le giga"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527880",
+            "question": "Dans quelle ville se trouve la fontaine de Trevi ?",
+            "answer": "Rome",
+            "badAnswers": [
+                "Venise",
+                "Barcelone",
+                "Seville"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952787f",
+            "question": "Dans quel pays se trouve le circuit automobile de Zandvoort ?",
+            "answer": "Les Pays-Bas",
+            "badAnswers": [
+                "La Belgique",
+                "La Suisse",
+                "La France"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527885",
+            "question": "Dans quelle ville sont situées les plus célèbres falaises de France ?",
+            "answer": "Etretat",
+            "badAnswers": [
+                "Nice",
+                "Brest",
+                "Saint-Malo"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527888",
+            "question": "Quel os du squelette humain est le plus long et le plus solide ?",
+            "answer": "Le fémur",
+            "badAnswers": [
+                "Le radius",
+                "Le cubitus",
+                "Le carpe"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "64243d70aeb01b8c7606fb6a",
+            "question": "Quel est le nom du 46ème président des Etats-Unis ?",
+            "answer": "Joe Biden",
+            "badAnswers": [
+                "Donald Trump",
+                "Barack Obama",
+                "Georges W. Bush"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "645f876abca7a5cfa9166e16",
+            "question": "Quel est le plus grand désert du monde ?",
+            "answer": "Sahara",
+            "badAnswers": [
+                "Kalahari",
+                "Gobi",
+                "Australien"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527840",
+            "question": "Combien d'oeuvres a réalisé Jackson Pollock ?",
+            "answer": "+ de 700",
+            "badAnswers": [
+                "33",
+                "333",
+                "500"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527845",
+            "question": "Qui a joué dans la Fureur de vivre ?",
+            "answer": "James Dean",
+            "badAnswers": [
+                "Burt Lancaster",
+                "Clint Eastwood",
+                "Marlon Brando"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527846",
+            "question": "Qui a joué en premier le rôle de James Bond ?",
+            "answer": "Sean Connery",
+            "badAnswers": [
+                "Roger Moore",
+                "George Lazenby",
+                "Timothy Dalton"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527847",
+            "question": "En quelle année a été projeté le premier film ?",
+            "answer": "1895",
+            "badAnswers": [
+                "1924",
+                "1912",
+                "1904"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952784f",
+            "question": "Qui a composé la musique du film le grand Bleu ?",
+            "answer": "Eric Serra",
+            "badAnswers": [
+                "Vladimir Cosma",
+                "Alexandre Desplat",
+                "Ennio Morricone"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527857",
+            "question": "Lequel de ses personnages n'est pas disponible dans le jeu Street of Rage ?",
+            "answer": "Rick Thunder",
+            "badAnswers": [
+                "Adam Hunter",
+                "Axel Stone",
+                "Blaze Fielding"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527858",
+            "question": "Qui est le créateur du personnage Mario de Nintendo ?",
+            "answer": "Shigeru Miyamoto",
+            "badAnswers": [
+                "Fusajirō Yamauchi",
+                "Shuntaro Furukawa",
+                "Hayao Miyazaki"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa952785a",
+            "question": "Quel est le métier de Phoenix Wright ?",
+            "answer": "Avocat",
+            "badAnswers": [
+                "Enquêteur",
+                "Juge",
+                "Procureur"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952785f",
+            "question": "Quel est le premier jeu à avoir dépassé le million d'exemplaires vendus sur Playstation ?",
+            "answer": "Tekken",
+            "badAnswers": [
+                "Tomb Raider",
+                "Final Fantasy VII",
+                "Doom"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527868",
+            "question": "Qui a écrit 'Comme un boomerang', interprété par Etienne Daho et Dani en 2001 ?",
+            "answer": "Serges Gainsbourg",
+            "badAnswers": [
+                "Jean-Jacques Goldman",
+                "Patrick Bruel",
+                "Nicola Sirkis"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527881",
+            "question": "En quoi un nihiliste croit-il ?",
+            "answer": "En rien",
+            "badAnswers": [
+                "En la chance",
+                "En tout",
+                "En lui-même"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527882",
+            "question": "Avec quel autre animal vit généralement une oie ?",
+            "answer": "Le jars",
+            "badAnswers": [
+                "Le canard",
+                "Le cygne",
+                "La poule"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "642438e068d7ea9aa9527886",
+            "question": "Combien de paires de côtes possède-t-on ?",
+            "answer": "Douze paires",
+            "badAnswers": [
+                "Quatorze paires",
+                "Huit paires",
+                "Dix paires"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "642438e068d7ea9aa952788b",
+            "question": "De quelle plante le nom signifie-t-il 'turban' en perse ?",
+            "answer": "La tulipe",
+            "badAnswers": [
+                "La digitale",
+                "Le renoncule",
+                "La jonquille"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "644919d94127b4ef5edd107f",
+            "question": "Quel est le nom du 46ème président des Etats-Unis ?",
+            "answer": "Joe Biden",
+            "badAnswers": [
+                "Barack Obama",
+                "Georges W. Bush",
+                "Donald Trump"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "646fd8fcbca7a5cfa9167006",
+            "question": "Qui a écrit 'La Valise en carton' ?",
+            "answer": "Linda de Suza",
+            "badAnswers": [
+                "Victor Hugo",
+                "Bernard Werber",
+                "Amélie Nothomb"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "64ad413de4123c9a14769698",
+            "question": "La date de l'invention de l'écriture ?",
+            "answer": "-3300",
+            "badAnswers": [
+                "-2900",
+                "-10500",
+                "-3600"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "64ad41b6e4123c9a1476969a",
+            "question": "Où ont été jugés les nazis ?",
+            "answer": "Nuremberg",
+            "badAnswers": [
+                "Sigmaringen",
+                "Auschwitz",
+                "Berlin"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "64ad42c1e4123c9a1476969c",
+            "question": "La date de la découverte de l'Amérique (par les européens) ",
+            "answer": "1492",
+            "badAnswers": [
+                "1502",
+                "1451",
+                "1498"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "64ad4446e4123c9a1476969e",
+            "question": "Qui était le premier empereur romain ?",
+            "answer": "Auguste",
+            "badAnswers": [
+                "Jules César",
+                "Néron",
+                "Cicéron"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "64ad455fe4123c9a147696a0",
+            "question": "Qui a détruit l'Empire Incas ?",
+            "answer": "Francisco Pizarro",
+            "badAnswers": [
+                "Hernán Cortés",
+                "Alvares Cabral",
+                "Christophe Colomb"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "64ad463ae4123c9a147696a2",
+            "question": "Qui a été le premier roi de France ?",
+            "answer": "Clovis 1er",
+            "badAnswers": [
+                "Charlemagne",
+                "Pépin le bref",
+                "Eudes"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "64e0870ce4123c9a1476a2f9",
+            "question": "lequel de ces sports se joue avec un ballon?",
+            "answer": "Handball",
+            "badAnswers": [
+                "saut à la perche",
+                "tennis",
+                "tricot"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65030b4ce4123c9a1476aae5",
+            "question": "Qui apelle t-on 'mon gourmand' ?",
+            "answer": "Bebou",
+            "badAnswers": [
+                "Victor Hugo",
+                "Bernard Werber",
+                "Amélie Nothomb"
+            ],
+            "category": "art_litterature",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "65114882e4123c9a1476ae81",
+            "question": "Comment s'appelle le frère de Sasuke Uchiwa ?",
+            "answer": "Itachi",
+            "badAnswers": [
+                "Obito",
+                "Madara",
+                "Kakashi"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "651148a4e4123c9a1476ae83",
+            "question": "Comment s'appelle le frère de Sasuke Uchiwa ?",
+            "answer": "Itachi",
+            "badAnswers": [
+                "Obito",
+                "Madara",
+                "Kakashi"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "6515fe1fe4123c9a1476afcf",
+            "question": "Quel jour signe le début de l’invasion de l’Ukraine par la Russie ?",
+            "answer": "24 février 2022",
+            "badAnswers": [
+                "2 mars 2022",
+                "12 février 2022",
+                "6 mars 2022"
+            ],
+            "category": "actu_politique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "651c14b3e4123c9a1476b037",
+            "question": "Qui a gagné la coupe du monde 2022",
+            "answer": "Argentine",
+            "badAnswers": [
+                "Algérie",
+                "Congo",
+                "Sri-Lanka"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "653233bae4123c9a1476ba5d",
+            "question": "Quel long balai-brosse est généralement utilisé pour ramoner une cheminée ?",
+            "answer": "Un hérisson",
+            "badAnswers": [
+                "Une girafe",
+                "Un col de cygne",
+                "Un blaireau"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653233e8e4123c9a1476ba5f",
+            "question": "Quel héros de l'Antiquité a rencontré Circé, Calypso, Nausicaa et Pénélope ?",
+            "answer": "Ulysse",
+            "badAnswers": [
+                "Achille",
+                "Dédale",
+                "Hector"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653262b1e4123c9a1476ba61",
+            "question": "Quel héros de l'Antiquité a rencontré Circé, Calypso, Nausicaa et Pénélope ?",
+            "answer": "Ulysse",
+            "badAnswers": [
+                "Achille",
+                "Dédale",
+                "Hector"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653262e8e4123c9a1476ba63",
+            "question": "Quel métier est exercé par Jango Fett, humain originaire de Concord Dawn ?",
+            "answer": "Chasseur de primes",
+            "badAnswers": [
+                "Sénateur",
+                "Vendeur de droïdes",
+                "Musicien"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532632fe4123c9a1476ba65",
+            "question": "Entré aux Jeux olympiques, quel est le sport collectif aquatique « par excellence » ?",
+            "answer": "Water-polo",
+            "badAnswers": [
+                "Fistball",
+                "Ultimate",
+                "Triathlon"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326375e4123c9a1476ba69",
+            "question": "Quelles célèbres fontaines furent implantées en premier à Paris ?",
+            "answer": "Wallace",
+            "badAnswers": [
+                "Morris",
+                "Miller",
+                "Barnett"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326397e4123c9a1476ba6b",
+            "question": "Avec quel film de Steven Soderbergh le COVID-19 présente-t-il des points communs ?",
+            "answer": "Contagion",
+            "badAnswers": [
+                "Bubble",
+                "Paranoïa",
+                "Traffic"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653263d9e4123c9a1476ba6d",
+            "question": "Quel dessert doit son nom à une opérette de Jacques Offenbach ?",
+            "answer": "Poire Belle-Hélène",
+            "badAnswers": [
+                "Fraise Melba",
+                "Crème Chiboust",
+                "Opéra"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532640ce4123c9a1476ba6f",
+            "question": "Dans quelles régions du globe les cactus poussent-ils le mieux ?",
+            "answer": "Désert",
+            "badAnswers": [
+                "Plaines",
+                "Prairies",
+                "Montagnes"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65326432e4123c9a1476ba71",
+            "question": "uel plat traditionnel des Pays-Bas consiste en une purée mélangée avec des légumes ?",
+            "answer": "Stamppot",
+            "badAnswers": [
+                "Lefse",
+                "Potaye",
+                "Frico"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326471e4123c9a1476ba73",
+            "question": "Comment appelle-t-on l'espace situé entre deux skis placés côte à côte ?",
+            "answer": "Cambre",
+            "badAnswers": [
+                "Half-pipe",
+                "Stem",
+                "Télémark"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653264a4e4123c9a1476ba75",
+            "question": "Quel sport collectif utilise un disque opposant deux équipes de sept joueurs ?",
+            "answer": "Utimate",
+            "badAnswers": [
+                "Frisbee",
+                "Roller Derby",
+                "Water-polo"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653264dee4123c9a1476ba77",
+            "question": "Quel titre d''Hybrid Theory' Linkin Park ont-ils repris en acoustique pour la tournée One More Light ?",
+            "answer": "Crawling",
+            "badAnswers": [
+                "Papercut",
+                "One Step Closer",
+                "A place for My Head"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "6532650ae4123c9a1476ba79",
+            "question": "Quel docteur en informatique a publié le whitepaper de Polkadot ?",
+            "answer": "Gavin Wood",
+            "badAnswers": [
+                "Charlie Lee",
+                "Sunny King",
+                "Roger Ver"
+            ],
+            "category": "actu_politique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "65326537e4123c9a1476ba7b",
+            "question": "Dans les X-Men, quelle substance constitue le squelette principal de Wolverine ?",
+            "answer": "Adamatium",
+            "badAnswers": [
+                "Vibranium",
+                "Cavorite",
+                "Neutronium"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "6532656ee4123c9a1476ba7d",
+            "question": "Quels Jeux olympiques ont été supprimés à cause de la Seconde Guerre mondiale ?",
+            "answer": "1940 et 1944",
+            "badAnswers": [
+                "1936 et 1940",
+                "1944 et 1948",
+                "1932 et 1936"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532658ce4123c9a1476ba7f",
+            "question": "Quelle est, en centimètres, la longueur de la langue d'un fourmilier adulte ?",
+            "answer": "60cm",
+            "badAnswers": [
+                "50cm",
+                "70cm",
+                "80cm"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653265bbe4123c9a1476ba81",
+            "question": "Quelle mannequin des Hauts-de-France a présenté la météo sur Canal+ en 2014 ?",
+            "answer": "Raphaëlle Dupire",
+            "badAnswers": [
+                "Louise Bourgoin",
+                "Charlotte Le Bon",
+                "auline Lefèvre"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653265dee4123c9a1476ba83",
+            "question": "Dans quel pays les femmes portent-elles encore des mantilles ?",
+            "answer": "Espagne",
+            "badAnswers": [
+                "Grèce",
+                "Maroc",
+                "Algérie"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "65326603e4123c9a1476ba85",
+            "question": "Quelle chanteuse québécoise a connu le succès avec 'Come To Me' ?",
+            "answer": "France Joli",
+            "badAnswers": [
+                "Tabitha Lemaire",
+                "Fanny Bloom",
+                "Chantal Renaud"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326628e4123c9a1476ba87",
+            "question": "Dans une expression argotique, quel nombre est souvent associé aux flics ?",
+            "answer": "Le 22",
+            "badAnswers": [
+                "Le 11",
+                "Le 33",
+                "Le 44"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532664de4123c9a1476ba89",
+            "question": "Où mange-t-on régulièrement de la moussaka en buvant de la retsina ?",
+            "answer": "En Grèce",
+            "badAnswers": [
+                "En Russie",
+                "Au Canada",
+                "Au Maroc"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326682e4123c9a1476ba8b",
+            "question": "Quel était le nom de la navigatrice en solitaire française, skipper du Biotherm ?",
+            "answer": "Florence Artaud",
+            "badAnswers": [
+                "Isabelle Autissier",
+                "Mathilde Géron",
+                "Maud Fontenoy"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653266a7e4123c9a1476ba8d",
+            "question": "Quel fils de Louis de Funès a joué à ses côtés dans 'Sur un arbre perché' ?",
+            "answer": "Olivier",
+            "badAnswers": [
+                "Oscar",
+                "Owens",
+                "Octave"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653266d4e4123c9a1476ba8f",
+            "question": "À combien s'élève environ le total des gains remportés par John McEnroe ?",
+            "answer": "13 millions",
+            "badAnswers": [
+                "10 millions",
+                "16 millions",
+                "19 millions"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326714e4123c9a1476ba91",
+            "question": "Quelle actrice américaine est la fille de la regrettée Jayne Mansfield ?",
+            "answer": "Mariska Hargitay",
+            "badAnswers": [
+                "Helen Hunt",
+                "Gwyneth Paltrow",
+                "Glenn Close"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326751e4123c9a1476ba93",
+            "question": "Dans quel album de Mike Oldfied un des titres est consacré au mont Saint-Michel ?",
+            "answer": "Voyager",
+            "badAnswers": [
+                "Amarok",
+                "Discovery",
+                "Crises"
+            ],
+            "category": "musique",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "653267fde4123c9a1476ba95",
+            "question": "Dans quel océan se situe l’île de la Réunion ?",
+            "answer": "L'océan Indien",
+            "badAnswers": [
+                "L'océan Antlantique",
+                "L'océan Pacifique",
+                "L'océan Austral"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326817e4123c9a1476ba97",
+            "question": "Quelle est la capitale (chef-lieu) de l’île de la Réunion ?",
+            "answer": "Saint-Denis",
+            "badAnswers": [
+                "Saint-Pierre",
+                "Saint-GIlles",
+                "Saint-Paul"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65326849e4123c9a1476ba99",
+            "question": "Quel volcan célèbre se situe sur l’île de la Réunion ?",
+            "answer": "Le Piton de la Fournaise",
+            "badAnswers": [
+                "La Grande Soufrière",
+                "Le Mont Rainier",
+                "La montagne Pelée"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532687ae4123c9a1476ba9b",
+            "question": "Quelle est la superficie de l’île de la Réunion ?",
+            "answer": "2512km²",
+            "badAnswers": [
+                "992km²",
+                "2150km²",
+                "5240km²"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65327f1be4123c9a1476ba9e",
+            "question": "Quel est le point culminant de l'ile de La Réunion ?",
+            "answer": "Le Piton des Neiges",
+            "badAnswers": [
+                "Le Piton de la Fournaise",
+                "Le Piton Rouge",
+                "La Soufrière"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65327f76e4123c9a1476baa0",
+            "question": "Quel plat emblématique de l’île de la Réunion est fait à base de saucisses ?",
+            "answer": "Le rougail saucisses",
+            "badAnswers": [
+                "Le goulash de saucisses",
+                "La frittata à la saucisse",
+                "La soupe épicée aux haricots et à la saucisse"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65327f98e4123c9a1476baa2",
+            "question": "Quel arbre à la floraison rouge et abondante fleurit pour les fêtes de fin d’année sur l’île de la Réunion ?",
+            "answer": "Le flamboyant",
+            "badAnswers": [
+                "Le tamarin",
+                "Le frangipanier",
+                "Le vacoa"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65327fbfe4123c9a1476baa4",
+            "question": "Avant 1848, l’île de la Réunion était nommée autrement. Comment s’appelait-elle ?",
+            "answer": "L'ile Bourbon",
+            "badAnswers": [
+                "L'ile du Piton",
+                "L'ile Magnifique",
+                "L'ile de Napoléon"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65327fe5e4123c9a1476baa6",
+            "question": "Quel animal migre sur les côtes de l’île de la Réunion de juillet à octobre ?",
+            "answer": "La baleine à bosse",
+            "badAnswers": [
+                "La tortue marine",
+                "Le poisson trompette",
+                "Le poisson-ballon"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328018e4123c9a1476baa8",
+            "question": "Qu’est-ce qu’un z'oreille sur l’île de la Réunion ?",
+            "answer": "Un métropolitain",
+            "badAnswers": [
+                "Un oiseau migrateur",
+                "Un plat réunionnais",
+                "Un petit animal terrestre endémique"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328042e4123c9a1476baaa",
+            "question": "Qu’est-ce que le maloya, très populaire à la Réunion ?",
+            "answer": "Un genre musical",
+            "badAnswers": [
+                "Une boisson alcoolisée",
+                "Un des cirques naturels",
+                "Un dessert"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328086e4123c9a1476baac",
+            "question": "Quelle série lancée en 2013 est connue pour être la première série Netflix ?",
+            "answer": "House of Cards",
+            "badAnswers": [
+                "Orange is the new black",
+                "Stranger Things",
+                "The Crown"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653280abe4123c9a1476baae",
+            "question": "Dans quelle série Omar Sy est le personnage principal ?",
+            "answer": "Lupin",
+            "badAnswers": [
+                "Marseille",
+                "Intouchables",
+                "La Casa de Papel"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653280cfe4123c9a1476bab0",
+            "question": "Quelle série à vu l'arrivée de Gillian Anderson et Olivia Colman dans son casting en 2020 ?",
+            "answer": "The Crown",
+            "badAnswers": [
+                "Sex Education",
+                "Le Jeu de la Dame",
+                "The Witcher"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653280ece4123c9a1476bab2",
+            "question": "Quelle série met en avant le cartel de la drogue de Medellín ?",
+            "answer": "Narcos",
+            "badAnswers": [
+                "Sense 8",
+                "Orange is the new black",
+                "Dark"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532810fe4123c9a1476bab4",
+            "question": "Quelle série française lancée en 2020 parlait d'un étrange virus baptisé le sang bleu ?",
+            "answer": "La Révolution",
+            "badAnswers": [
+                "Perdus dans l'espace",
+                "The 100",
+                "Control Z"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328149e4123c9a1476bab8",
+            "question": "Quel célèbre artiste est représenté sur les masques de la série Casa de Papel ?",
+            "answer": "Salvador Dali",
+            "badAnswers": [
+                "Pablo Picasso",
+                "Paco Rabanne",
+                "Francisco de Goya"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328166e4123c9a1476baba",
+            "question": "Dans quelle série Netflix, nous découvrons les dérives possibles des écrans que nous utilisons tous les jours ?",
+            "answer": "Black Mirror",
+            "badAnswers": [
+                "Mindhunter",
+                "Godless",
+                "The OA"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328183e4123c9a1476babc",
+            "question": "Quel film se partage les mêmes créateurs que la série Sense 8 ?",
+            "answer": "Matrix",
+            "badAnswers": [
+                "Mad Max",
+                "Scream",
+                "Interstellar"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653281bde4123c9a1476babe",
+            "question": "Sous quel numéro est connu le personnage campé par Millie Bobby Brown dans Stranger Things ?",
+            "answer": "Le 11",
+            "badAnswers": [
+                "Le 9",
+                "Le 13",
+                "Le 15"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653281f8e4123c9a1476bac0",
+            "question": "Quelle est cette danse sensuelle venue d’Argentine ?",
+            "answer": "Tango",
+            "badAnswers": [
+                "Salsa",
+                "Samba",
+                "Bachata"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328218e4123c9a1476bac2",
+            "question": "Comment s’appelle la danse née à la fin des années 50 aux États-Unis et qui se pratique en groupe et en ligne ?",
+            "answer": "Madison",
+            "badAnswers": [
+                "Quick Step",
+                "Le Twist",
+                "Be-bop"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328236e4123c9a1476bac4",
+            "question": "Quelle activité est directement associée à la danse “Pasodoble” ?",
+            "answer": "La corrida",
+            "badAnswers": [
+                "Le carnaval",
+                "La plage",
+                "L'opéra"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532824ee4123c9a1476bac6",
+            "question": "Quelle danse est traditionnelle du carnaval de Rio ?",
+            "answer": "Samba",
+            "badAnswers": [
+                "Rumba",
+                "Salsa",
+                "Cha-Cha"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328263e4123c9a1476bac8",
+            "question": "Quelle est cette danse d’origine espagnole ?",
+            "answer": "Flamenco",
+            "badAnswers": [
+                "Mambo",
+                "Jive",
+                "Valse"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532828ae4123c9a1476baca",
+            "question": "Lequel de ces pays n'a jamais remporté la Coupe du Monde de Rugby à XV ?",
+            "answer": "Canada",
+            "badAnswers": [
+                "Afrique du Sud",
+                "Angleterre",
+                "Australie"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653282a6e4123c9a1476bace",
+            "question": "À quelle fréquence, la Coupe du Monde de Rugby à XV est-elle organisée ?",
+            "answer": "Tous les 4 ans",
+            "badAnswers": [
+                "Tous les 3 ans",
+                "Tous les 5 ans",
+                "Tous les 6 ans"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653282c6e4123c9a1476bad0",
+            "question": "Quelle équipe a remporté la toute première Coupe du Monde de Rugby à XV en 1987 ?",
+            "answer": "Nouvelle-Zélande",
+            "badAnswers": [
+                "France",
+                "Afrique du Sud",
+                "Angleterre"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653282eae4123c9a1476bad2",
+            "question": "Quelle équipe a été exclue de la Coupe du Monde de Rugby en 1987 et 1991 ?",
+            "answer": "Afrique du Sud",
+            "badAnswers": [
+                "Russie",
+                "Etats-Unis",
+                "Italie"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328302e4123c9a1476bad4",
+            "question": "Quel était le pays organisateur de la Coupe du Monde de Rugby en 2019 ?",
+            "answer": "Japon",
+            "badAnswers": [
+                "Angleterre",
+                "Italie",
+                "Australie"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328327e4123c9a1476bad9",
+            "question": "Quel joueur de rugby détient le record de points marqués en Coupe du Monde de Rugby ?",
+            "answer": "Johnny Wilkinson",
+            "badAnswers": [
+                "Frédéric Michalak",
+                "Daniel Carter",
+                "Gavin Hastings"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328349e4123c9a1476badb",
+            "question": "Quelle équipe ayant déjà remporté la Coupe du Monde de Rugby est surnommée \"les Springboks\" ?",
+            "answer": "L'Afrique du Sud",
+            "badAnswers": [
+                "L'Australie",
+                "La Nouvelle-Zélande",
+                "Les Fidji"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328367e4123c9a1476badd",
+            "question": "Quelle est la durée d'une mi-temps dans un match de rugby à XV ?",
+            "answer": "40 min",
+            "badAnswers": [
+                "30 min",
+                "35 min",
+                "45 min"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653283a8e4123c9a1476bae2",
+            "question": "Dans quel pays se situe la ville de Suez, célèbre pour son canal ?",
+            "answer": "Egypte",
+            "badAnswers": [
+                "Turquie",
+                "Arabie Saoudite",
+                "Liban"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653283c9e4123c9a1476bae7",
+            "question": "Avec quelle chanson le groupe ABBA remporte-t-il le concours de l’Eurovision en 1974 ?",
+            "answer": "Waterloo",
+            "badAnswers": [
+                "Dancing Queen",
+                "Mamma Mia",
+                "The Winner Takes It All"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653283eae4123c9a1476bae9",
+            "question": "Dans quelle phase du sommeil se produisent les rêves dont on se souvient ?",
+            "answer": "Le sommeil paradoxal",
+            "badAnswers": [
+                "Le sommeil léger",
+                "Le sommeil profond",
+                "Le coma"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328438e4123c9a1476baee",
+            "question": "En quelle année se déroule la première élection présidentielle de France ?",
+            "answer": "1848",
+            "badAnswers": [
+                "1809",
+                "1883",
+                "1907"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328461e4123c9a1476baf0",
+            "question": "Quel président a eu le mandat le plus long ?",
+            "answer": "François Mitterand",
+            "badAnswers": [
+                "Charles de Gaulle",
+                "Georges Pompidou",
+                "Jean Casimir-Perier"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532848fe4123c9a1476baf2",
+            "question": "Quel est le 1er président de Cinquième République ?",
+            "answer": "Charles de Gaulle",
+            "badAnswers": [
+                "Valéry Giscard d'Estaing",
+                "René Coty",
+                "Georges Pompidou"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653284b6e4123c9a1476baf6",
+            "question": "Quel est le dernier président à avoir fait un septennat ?",
+            "answer": "Jacques Chirac",
+            "badAnswers": [
+                "Françcois Mitterand",
+                "Nicolas Sarkozy",
+                "François Hollande"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653284d8e4123c9a1476baf8",
+            "question": "Quel président est connu pour la phrase \"Je vous ai compris\" ?",
+            "answer": "Charles de Gaulle",
+            "badAnswers": [
+                "Nicolas Sarkozy",
+                "Valéry Giscard d'Estaing",
+                "François Hollande"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653284fce4123c9a1476bafa",
+            "question": "Quel président français a été élu le plus jeune ?",
+            "answer": "Emmanuel Macron",
+            "badAnswers": [
+                "Emile Loubert",
+                "Félix Faure",
+                "François Hollande"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328527e4123c9a1476bafc",
+            "question": "De quel pouvoir le président de la République française dispose-t-il ?",
+            "answer": "Executif",
+            "badAnswers": [
+                "Legislatif",
+                "Judiciare",
+                "Tous les pouvoirs"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328555e4123c9a1476bafe",
+            "question": "Quel président est célèbre pour son \"Au revoir\" ?",
+            "answer": "Valéry Giscard d'Estaing",
+            "badAnswers": [
+                "Georges Pompidou",
+                "Vincent Auriol",
+                "François Mitterand"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532858ee4123c9a1476bb00",
+            "question": "Quel manga a réalisé plus de 500 000 entrées au cinéma en France en 2022 ?",
+            "answer": "One Piece",
+            "badAnswers": [
+                "Hunter X Hunter",
+                "Death Note",
+                "Bleach"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653285ade4123c9a1476bb02",
+            "question": "Quel est le nom de la série TV de 2022 sur le thème de la Famille Addams et réalisée par Tim Burton ?",
+            "answer": "Mercredi",
+            "badAnswers": [
+                "Nevermore",
+                "The Thing",
+                "Les Goth's"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653285d1e4123c9a1476bb04",
+            "question": "Quel club de foot a remporté la Ligue 1 de la saison 2021-2022 ?",
+            "answer": "PSG ",
+            "badAnswers": [
+                "LOSC",
+                "L'OM",
+                "Girondins"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653285fbe4123c9a1476bb06",
+            "question": "Quel modèle du téléphone d’Apple a été dévoilé le 7 septembre 2022 ?",
+            "answer": "iPhone 14",
+            "badAnswers": [
+                "iPhone 12",
+                "iPhone 13",
+                "iPhone 15"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328620e4123c9a1476bb08",
+            "question": "Qui a dit en 2022 : “Je vis avec un homme déconstruit et j’en suis super heureuse !” ?",
+            "answer": "Sandrine Rousseau",
+            "badAnswers": [
+                "Marlène Schiappa",
+                "Brigitte Macron",
+                "Camilla Parker Bowles"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328640e4123c9a1476bb0a",
+            "question": "Qui a été élu “Personnalité de l’année 2022” par le magazine américain Time ?",
+            "answer": "Volodymyr Zelensky",
+            "badAnswers": [
+                "Elon Musk",
+                "Vladimir Poutine",
+                "Kanye West"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532865ae4123c9a1476bb0c",
+            "question": "Dans quel pays, un ancien premier ministre a été assassiné en pleine rue de 2 coups de feu durant un discours le 8 juillet 2022 ?",
+            "answer": "Japon",
+            "badAnswers": [
+                "Espagne",
+                "Yemen",
+                "Inde"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328678e4123c9a1476bb0e",
+            "question": "Quel film a fait son retour en 2022 pour une suite après 13 ans d’attente ?",
+            "answer": "Avatar",
+            "badAnswers": [
+                "Indiana Jones",
+                "Mad Max",
+                "Terminator"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653286a0e4123c9a1476bb10",
+            "question": "Dans quel pays du monde, le palais du président a-t-il été envahi par des manifestants qui pointaient la mauvaise gestion du pays le 9 juillet 2022 ?",
+            "answer": "Sri Lanka",
+            "badAnswers": [
+                "Philippines",
+                "Liban",
+                "Vénézuela"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653286b7e4123c9a1476bb12",
+            "question": "Sur quelle île s’est déroulé le sommet du G20 2022 ?",
+            "answer": "Bali",
+            "badAnswers": [
+                "Java",
+                "Bornéo",
+                "Sumatra"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653286dbe4123c9a1476bb14",
+            "question": "Parti de Melun le 5 mai 2022, où s’est rendu DebbraahWorld, star des réseaux sociaux, lors d’un voyage à pied durant 158 jours ?",
+            "answer": "Alger",
+            "badAnswers": [
+                "Marseille",
+                "Kiev",
+                "Dubaï"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328701e4123c9a1476bb16",
+            "question": "Quel homme politique français a été condamné en 2022 pour violences conjugales ?",
+            "answer": "Adrien Quatennens",
+            "badAnswers": [
+                "Eric Ciotti",
+                "Damien Abad",
+                "Gérald Darmanin"
+            ],
+            "category": "actu_politique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532873de4123c9a1476bb18",
+            "question": "Quel est le métier d’Obélix dans les aventures d’Astérix et Obélix ?",
+            "answer": "Tailleur et livreur de menhirs",
+            "badAnswers": [
+                "Chef de village",
+                "Chasseur de sanglier",
+                "Forgeron"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65328759e4123c9a1476bb1a",
+            "question": "Dans quelle ville se déroule chaque année le Festival interceltique ?",
+            "answer": "Lorient",
+            "badAnswers": [
+                "Brest",
+                "Mulhouse",
+                "Cahors"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328777e4123c9a1476bb1c",
+            "question": "Quel est le pays premier producteur mondial de tomates ?",
+            "answer": "La chine",
+            "badAnswers": [
+                "L'italie",
+                "Le Maroc",
+                "Les Pays-Bas"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653287a5e4123c9a1476bb1e",
+            "question": "Qui a écrit la pièce de théâtre Cyrano de Bergerac ?",
+            "answer": "Edmond Rostand",
+            "badAnswers": [
+                "Victor Hugo",
+                "Molière",
+                "Alfred de Musset"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "653287dfe4123c9a1476bb20",
+            "question": "Quel auteur a écrit les romans “L’Étranger” et “La Peste” ?",
+            "answer": "Albert Camus",
+            "badAnswers": [
+                "Marcel Proust",
+                "Jean Cocteau",
+                "André de Malraux"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328804e4123c9a1476bb22",
+            "question": "Quel est le premier livre écrit par Françoise Sagan alors qu’elle n’a que 18 ans, en 1954 ?",
+            "answer": "Bonjour tristesse",
+            "badAnswers": [
+                "Au revoir tristesse",
+                "Bonsoir tristesse",
+                "Adieu tristesse"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65328825e4123c9a1476bb24",
+            "question": "Le film Charlie et la chocolaterie est l’adaptation d’un célèbre roman pour enfant, mais qui en est l’auteur ?",
+            "answer": "Roald Dahl",
+            "badAnswers": [
+                "Enid Blyton",
+                "Caroline Quine",
+                "C.S Lewis"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532883fe4123c9a1476bb26",
+            "question": "Avec Meg, Jo et Beth, comment s’appelle la 4ème fille du docteur March, dans le roman de Louisa May Alcott ?",
+            "answer": "Amy",
+            "badAnswers": [
+                "Mary",
+                "Sarah",
+                "Jane"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532885fe4123c9a1476bb28",
+            "question": "Qui a écrit le roman à succès “Les fourmis” ?",
+            "answer": "Bernard Weber",
+            "badAnswers": [
+                "Franck Thilliez",
+                "Maxime Chattam",
+                "Alexandre Jardin"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532888be4123c9a1476bb2a",
+            "question": "Comment s’appelle le capitaine qui veut se venger de Moby-Dick dans le roman d’Hermann Melville ?",
+            "answer": "Capitaine Achab",
+            "badAnswers": [
+                "Capitaine Crochet",
+                "Capitaine Fracasse",
+                "Capitaine Némo"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329a2de4123c9a1476bb6a",
+            "question": "Quelle est la signification étymologique du mot dinosaure ?",
+            "answer": "Terrible lézard",
+            "badAnswers": [
+                "Monstre géant",
+                "Animal préhistorique",
+                "Redoutable prédateur"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329a50e4123c9a1476bb6c",
+            "question": "Quand les premiers dinosaures seraient-ils apparus sur Terre ?",
+            "answer": "Il y a 230 millions d'années",
+            "badAnswers": [
+                "Il y a 5 millions d'années",
+                "Il y a 65 millions d'années",
+                "Il y a 20 millions d'années"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329a74e4123c9a1476bb6e",
+            "question": "Laquelle de ces périodes géologiques est la plus récente ?",
+            "answer": "Crétacé",
+            "badAnswers": [
+                "Trias",
+                "Jurassique",
+                "Carbonifère"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329a8be4123c9a1476bb70",
+            "question": "À quelle date remonte la découverte du premier fossile de dinosaure entier ?",
+            "answer": "1815",
+            "badAnswers": [
+                "1380",
+                "1609",
+                "1920"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329aa9e4123c9a1476bb72",
+            "question": "Quelle est la signification de \"rex\" dans le nom Tyrannosaure rex ?",
+            "answer": "Roi",
+            "badAnswers": [
+                "Tueur",
+                "Géant",
+                "Dominant"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329ad3e4123c9a1476bb74",
+            "question": "En astronomie, quelle est la classification du Soleil ?",
+            "answer": "Une étoile naine jaune",
+            "badAnswers": [
+                "Une nébuleuse",
+                "Une étoile géante rougea",
+                "Un pulsar"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329af9e4123c9a1476bb76",
+            "question": "De quelle galaxie fait partie le Soleil ?",
+            "answer": "La voie lactée",
+            "badAnswers": [
+                "Andromède",
+                "La Grande Ourse",
+                "La Roue du Chariot"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329b2de4123c9a1476bb78",
+            "question": "Quelle est la distance moyenne qui sépare la Terre du Soleil ?",
+            "answer": "150 millions de km",
+            "badAnswers": [
+                "4 millions de km",
+                "60 millions de km",
+                "350 millions de km"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329b41e4123c9a1476bb7a",
+            "question": "De quoi est composée la photosphère (première couche) du Soleil ?",
+            "answer": "Gaz",
+            "badAnswers": [
+                "Roche",
+                "Eau",
+                "Vapeur"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329b69e4123c9a1476bb7c",
+            "question": "Combien de temps dure la rotation complète de la Lune autour de la Terre ?",
+            "answer": "28 jours",
+            "badAnswers": [
+                "7 jours",
+                "24h",
+                "48h"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329b8ce4123c9a1476bb7e",
+            "question": "À quelle distance, en moyenne, la Lune se trouve-t-elle de la Terre ?",
+            "answer": "384 400 km",
+            "badAnswers": [
+                "284 400 km",
+                "484 40 km",
+                "584 400 km"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329bb6e4123c9a1476bb80",
+            "question": "En combien de phases, le cycle de la Lune est-il découpé ?",
+            "answer": "8 phases",
+            "badAnswers": [
+                "4 phases",
+                "6 phases",
+                "10 phases"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329bdae4123c9a1476bb82",
+            "question": "Sur la Lune, quelle masse semblera peser un personne dont la masse est de 60 kg sur Terre ?",
+            "answer": "10 kg",
+            "badAnswers": [
+                "80 kg",
+                "45 kg",
+                "30 kg"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329c08e4123c9a1476bb84",
+            "question": "Quel est l’inverse d’une dépression en météorologie ?",
+            "answer": "Un anticyclone",
+            "badAnswers": [
+                "Une convection",
+                "Un cumulus",
+                "Une averse"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329c32e4123c9a1476bb86",
+            "question": "Sous quel nom est plus connu l’anticyclone de l’Atlantique Nord ?",
+            "answer": "Anticyclone de Açores",
+            "badAnswers": [
+                "Anticyclone de Sainte-Hélène",
+                "Anticyclone de Lucifer",
+                "Anticyclone Alfredo"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329c7ae4123c9a1476bb88",
+            "question": "Quelle est la direction des vents violents nommés par l’anglicisme “jet streams” ?",
+            "answer": "Ouest en Est",
+            "badAnswers": [
+                "Nord au Sud",
+                "Est en Ouest",
+                "Sud au Nord"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329ca5e4123c9a1476bb8a",
+            "question": "En quelle année l’ère de la conquête spatiale a-t-elle commencé ?",
+            "answer": "1957",
+            "badAnswers": [
+                "1932",
+                "1913",
+                "1974"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329ccae4123c9a1476bb8c",
+            "question": "Sur fond de quel conflit politique entre les États-Unis et l’URSS, la conquête spatiale a-t-elle débuté ?",
+            "answer": "La guerre froide",
+            "badAnswers": [
+                "La guerre de Sécession",
+                "La première guerre mondiale",
+                "La seconde guerre mondiale"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329cebe4123c9a1476bb8e",
+            "question": "Quel est le nom du premier Homme à effectuer un voyage réussi dans l’espace ?",
+            "answer": "Youri Gagarine",
+            "badAnswers": [
+                "Guerman Titov",
+                "Buzz Aldrin",
+                "Neil Armstrong"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329d12e4123c9a1476bb90",
+            "question": "Au repos, combien de fois en moyenne le cœur d’un homme bat-il en 1 minute ?",
+            "answer": "60 à 80",
+            "badAnswers": [
+                "25 à 40",
+                "40 à 60",
+                "80 à 100"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329d2ee4123c9a1476bb92",
+            "question": "Quelles sont les vertèbres qui se trouvent tout en haut de la colonne vertébrale ?",
+            "answer": "Les cervicales",
+            "badAnswers": [
+                "Les lombaires",
+                "Les pelviennes",
+                "Les thoraciques"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329d4de4123c9a1476bb94",
+            "question": "Quel est le nom de la protéine qui donne sa couleur rouge au sang ?",
+            "answer": "L'albumine",
+            "badAnswers": [
+                "L'hémoglobine",
+                "Le plasma",
+                "La gammaglobuline"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329d6ee4123c9a1476bb96",
+            "question": "À quel âge les hommes ne produisent-ils plus de spermatozoïdes ?",
+            "answer": "Jamais",
+            "badAnswers": [
+                "40 ans",
+                "60 ans",
+                "80 ans"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329da0e4123c9a1476bb98",
+            "question": "Lors d’un effort musculaire, quel déchet est produit par les muscles ?",
+            "answer": "Du dioxyde de carbone",
+            "badAnswers": [
+                "De l'oxygène",
+                "Du glucose",
+                "De l'azote"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329db2e4123c9a1476bb9a",
+            "question": "Quel est le pourcentage d’eau dans le corps humain pour un adulte ?",
+            "answer": "65%",
+            "badAnswers": [
+                "35%",
+                "50%",
+                "80%"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329ddae4123c9a1476bb9c",
+            "question": "Quelle est la 4ᵉ pierre précieuse avec le diamant, le saphir et le rubis ?",
+            "answer": "L'émeraude",
+            "badAnswers": [
+                "L'améthyste",
+                "Le quartz",
+                "Le lapis-lazuli"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329dede4123c9a1476bb9e",
+            "question": "Quelle est la couleur d’une pierre de rubis ?",
+            "answer": "Rouge",
+            "badAnswers": [
+                "Verte",
+                "Bleue",
+                "Jaune"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329e0de4123c9a1476bba0",
+            "question": "Quel pays possède les plus grosses mines de diamants au monde ?",
+            "answer": "Russie",
+            "badAnswers": [
+                "République Démocratique du Congo",
+                "Australie",
+                "Brésil"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329e4ce4123c9a1476bba2",
+            "question": "Quelle formule permet d’associer une vitesse (v) à un distance (d) et un temps (t) ?",
+            "answer": "d = v*t",
+            "badAnswers": [
+                "v=d*t",
+                "t=d*v",
+                "v=d*d*t"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329e81e4123c9a1476bba4",
+            "question": "Je profite d’une promo de 20% sur un achat à 40 €. Quel est le montant que je vais économiser ?",
+            "answer": "8 €",
+            "badAnswers": [
+                "5 €",
+                "10€",
+                "12€"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329eb5e4123c9a1476bba6",
+            "question": "Quel est le périmètre d'un carré de 5 cm de côté ?",
+            "answer": "20 cm",
+            "badAnswers": [
+                "25 cm",
+                "15 cm",
+                "10 cm"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329eeee4123c9a1476bba8",
+            "question": "Si l'on divise une minute en 4, combien y a-t-il de secondes dans chaque part ?",
+            "answer": "15 secondes",
+            "badAnswers": [
+                "12.5 secondes",
+                "20 secondes",
+                "25 secondes"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329f24e4123c9a1476bbaa",
+            "question": "En quelle année les premières briques de LEGO ont été commercialisées ?",
+            "answer": "1952",
+            "badAnswers": [
+                "1932",
+                "1962",
+                "1982"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329f3ee4123c9a1476bbac",
+            "question": "Quel type de jouet était fabriqué par la marque LEGO à ses débuts ?",
+            "answer": "Des jouets en bois",
+            "badAnswers": [
+                "Des avions",
+                "Des peluches",
+                "Des jeux de société"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329f91e4123c9a1476bbae",
+            "question": "Que signifie chez les Ch’tis le mot babache ?",
+            "answer": "Une personne idiote",
+            "badAnswers": [
+                "Une personne bavarde",
+                "Une personne peureuse",
+                "Une personne gourmande"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329fade4123c9a1476bbb0",
+            "question": "De quel coin de France est originaire l’Aligot ?",
+            "answer": "Auvergne",
+            "badAnswers": [
+                "Corse",
+                "Bourgogne",
+                "Ile-de-France"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329fcae4123c9a1476bbb2",
+            "question": "De quelle région le Kouglof est-il une spécialité ?",
+            "answer": "Alsace",
+            "badAnswers": [
+                "Franche-Comté",
+                "Rhône-Alpes",
+                "Aveyron"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65329febe4123c9a1476bbb4",
+            "question": "Quel humoriste s’est fait connaître sur internet avec cette célèbre phrase: C’est en faisant n’importe quoi que l’on devient n’importe qui ?",
+            "answer": "Rémi Gaillard",
+            "badAnswers": [
+                "Tibo InShape",
+                "Vérino",
+                "Alex Ramires"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a021e4123c9a1476bbb6",
+            "question": "Quel défi s’est lancé le youtubeur Inoxtag pour l’année 2024 ?",
+            "answer": "Escalader l'Everest",
+            "badAnswers": [
+                "Ouvrir une chaine de pizzérias",
+                "Participer à Nija Warrior",
+                "Visiter tous les pays du monde en 365 jours"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a07ae4123c9a1476bbb8",
+            "question": "Comment s’appelle la plante mise en culture pour la production de la vanille ?",
+            "answer": "Le vanillier",
+            "badAnswers": [
+                "Le vanillon",
+                "Le Vanier",
+                "La vanirguier"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a09be4123c9a1476bbba",
+            "question": "Lequel de ces légumes ne se récolte pas en hiver ?",
+            "answer": "La courgette",
+            "badAnswers": [
+                "La betterave",
+                "L'oignon",
+                "La mâche"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a0b2e4123c9a1476bbbc",
+            "question": "Quel est le légume d'hiver dont la France est le premier producteur européen ?",
+            "answer": "L'endive",
+            "badAnswers": [
+                "Le radis",
+                "L'oignon",
+                "Le chou-fleur"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a0cfe4123c9a1476bbbe",
+            "question": "Quelle est la bonne réponse pour compléter cette suite logique : 5, 10, 14, 17, 19, __ ?",
+            "answer": "20 ",
+            "badAnswers": [
+                "18 ",
+                "21 ",
+                "23 "
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a0f6e4123c9a1476bbc0",
+            "question": "De quelle région française le gâteau de Noël nommé \"Manalas\" est-il une spécialité ?",
+            "answer": "Alsace",
+            "badAnswers": [
+                "Bretagne",
+                "Corse",
+                "Auvergne"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a11de4123c9a1476bbc2",
+            "question": "Que déposent les Norvégiens sous le sapin, la veille de Noël ?",
+            "answer": "Un bol d'avoine",
+            "badAnswers": [
+                "Des carottes",
+                "Des pièces de monnaie",
+                "Du lait"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a15be4123c9a1476bbc4",
+            "question": "D’après la tradition, à quel moment doit débuter le repas de Noël en Ukraine ?",
+            "answer": "Quand le plus jeune enfant de la famille aperçoit la première étoile dans le ciel",
+            "badAnswers": [
+                "Quand le doyen de la famille le décide",
+                "Après les voeux du présidents",
+                "Au retour de la messe "
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6532a183e4123c9a1476bbc6",
+            "question": "Quelle est le bonne traduction en anglais de singe ?",
+            "answer": "Monkey",
+            "badAnswers": [
+                "Chimpanzee",
+                "Tamarin",
+                "Gorilla"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6538c3cde5ee48b6a3f7cae7",
+            "question": "Parmi ces noms, lequel n'a pas été celui de La Réunion auparavant ? ",
+            "answer": "L'île Vanille",
+            "badAnswers": [
+                "l'île Bourbon",
+                "l'île Bonaparte",
+                "Dina Morgabine"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65391643e5ee48b6a3f7cb63",
+            "question": "Qui a écrit 'La Valise en carton' ?",
+            "answer": "Linda de Suza",
+            "badAnswers": [
+                "Victor Hugo",
+                "Bernard Werber",
+                "Amélie Nothomb"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "6546888ce5ee48b6a3f7cfae",
+            "question": "Qui est Squeezie ?",
+            "answer": "Un influenceur web français",
+            "badAnswers": [
+                "Un conducteur",
+                "Un apiculteur ",
+                "Un astronaute "
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6569ff08e5ee48b6a3f7e1c1",
+            "question": "deux + deux = ?",
+            "answer": "quatre",
+            "badAnswers": [
+                "uns",
+                "deux",
+                "trois"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "659671a5e5ee48b6a3f80018",
+            "question": "Quel société voit le jour en 2024 suite à la fusion de 3 leaders romands de l'Intégration et de l’édition de logiciels ?",
+            "answer": "Komonn",
+            "badAnswers": [
+                "Kommon",
+                "Kromonn",
+                "Com'on"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6596729ee5ee48b6a3f8001a",
+            "question": "Comment s'appellent les employés minuscules de Willy Wonka",
+            "answer": "Oompa Loompa",
+            "badAnswers": [
+                "Goonies",
+                "Minimoys",
+                "Ula oups"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "659672fde5ee48b6a3f8001c",
+            "question": "Combien de joueurs composent une ligne au hockey sur glace ?",
+            "answer": "5",
+            "badAnswers": [
+                "6",
+                "15",
+                "16"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "6596735fe5ee48b6a3f8001e",
+            "question": "Quelle équipe de hockey sur glace remporte le championnat Suisse 2023 ?",
+            "answer": "Genève-Servette HC",
+            "badAnswers": [
+                "Fribourg Gotteron",
+                "HC Bienne",
+                "Lausanne HC"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65a8ea2ac4a3d379edfec1d8",
+            "question": "Qui est Zlatan Ibrahimovic ?",
+            "answer": "Un joueur de football suédois",
+            "badAnswers": [
+                "Un joueur de football serbe",
+                "Un joueur de football croate",
+                "Un joueur de football bulgare"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65b253bdbb53f288fc2ca858",
+            "question": "comment s'appelle l'héroïne de nier",
+            "answer": "2B",
+            "badAnswers": [
+                "C4",
+                "69",
+                "96"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65b64f93bb53f288fc2ca98d",
+            "question": "Qu'est-ce que HTML signifie en informatique ?",
+            "answer": "HyperText Markup Language",
+            "badAnswers": [
+                "HighTech Modern Language",
+                "HyperTransfer Markup Language",
+                "HyperText Machine Language"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65e090e0ab1f9aa811c93932",
+            "question": "Qui est le créateur d'Android ?",
+            "answer": "Andy Rubin",
+            "badAnswers": [
+                "Steve Wozniak",
+                "Jake Wharton",
+                "Paul Smith"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "65fb28b8ab1f9aa811c94847",
+            "question": "Qui est l'auteur de \"Roméo et Juliette\" ?",
+            "answer": "William Shakespeare ",
+            "badAnswers": [
+                "Victor Hugo",
+                "Jane Austen",
+                "Charles Dickens"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65fb2cd5ab1f9aa811c94896",
+            "question": "Quel est le titre du premier livre de la série \"Harry Potter\" ?",
+            "answer": "Harry Potter à l'école des sorciers",
+            "badAnswers": [
+                "Harry Potter et le Prisonnier d'Azkaban",
+                "Harry Potter et la Coupe de Feu",
+                "Harry Potter et la Chambre des Secrets"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65fb2d0bab1f9aa811c94898",
+            "question": "Qui est l'auteur du roman \"Orgueil et Préjugés\" ?",
+            "answer": "Jane Austen",
+            "badAnswers": [
+                "Emily Brontë",
+                "Louisa May Alcott",
+                "Charlotte Brontë"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65fb2d3dab1f9aa811c9489a",
+            "question": "Dans quelle époque se déroule le roman \"Les Trois Mousquetaires\" ?",
+            "answer": "Le XVIIe siècle ",
+            "badAnswers": [
+                "La Renaissance",
+                "Le Moyen Âge",
+                "Le XIXe siècle"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65fb2d70ab1f9aa811c9489c",
+            "question": "Quel est le nom du célèbre détective créé par Sir Arthur Conan Doyle ?",
+            "answer": "Sherlock Holmes",
+            "badAnswers": [
+                "Hercule Poirot",
+                "Miss Marple",
+                "Sam Spade"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "65ff4451ab1f9aa811c94a78",
+            "question": "Quel sport utilise un ballon rond et se joue principalement avec les pieds ?",
+            "answer": "Football",
+            "badAnswers": [
+                "Basketball",
+                "Tennis",
+                "Rugby"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "66056d2bab1f9aa811c94ce1",
+            "question": "Qui a écrit la ferme des animaux?",
+            "answer": "George Orwell",
+            "badAnswers": [
+                "Margareth Atwood",
+                "J K Rowling",
+                "Stephen King"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "66057684ab1f9aa811c94cf3",
+            "question": "Qui était le sélectionneur de l'équipe de France à la coupe du monde 2010?",
+            "answer": "Raymond Domenech",
+            "badAnswers": [
+                "Didier Deschamps",
+                "Aimé Jacquet",
+                "Michel Hidalgo"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "66057752ab1f9aa811c94cf5",
+            "question": "Qui a inscrit le 3ème but du tfc lors de la victoire contre Liverpool?",
+            "answer": "Frank Magri",
+            "badAnswers": [
+                "Thijs Dallinga",
+                "Aron Donnum",
+                "Yann Gboho"
+            ],
+            "category": "sport",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "660684b9ab1f9aa811c94d54",
+            "question": "Quel est le jeu vidéo souvent crédité comme étant le premier jeu d'arcade à succès ?",
+            "answer": "Pong",
+            "badAnswers": [
+                "Pac-Man",
+                "Space Invaders",
+                "Donkey Kong"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "662b7ce7ab1f9aa811c96504",
+            "question": "Comment s'appelle le frère de Mario ?",
+            "answer": "Luigi",
+            "badAnswers": [
+                "Waluigi",
+                "Wario",
+                "Yoshi"
+            ],
+            "category": "jeux_videos",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "662ef916ab1f9aa811c96a92",
+            "question": "Quelle est la civilisation qui a inventé le code d'amourabi",
+            "answer": "Babylone",
+            "badAnswers": [
+                "Rome",
+                "Grèce ",
+                "Egypte "
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "662f683eab1f9aa811c96ab4",
+            "question": "Quelle est la définition d'une société anonyme (SA) ?",
+            "answer": "Une société dont le capital est divisé en actions et dont la responsabilité des actionnaires est limitée à leurs apports",
+            "badAnswers": [
+                " Une société dont les associés ont une responsabilité illimitée",
+                "Une société dont le capital est entièrement détenu par l'État",
+                "La possession d'un diplôme en commerce"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "663c8d7cab1f9aa811c96f87",
+            "question": "qui a fait le film Avatar",
+            "answer": "James Cameron",
+            "badAnswers": [
+                "Bob marley",
+                "jean Dujardin",
+                "samuel Etienne"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "6652fd80ab1f9aa811c98128",
+            "question": "Quel pays à pris la CAN 2024",
+            "answer": "Côte d'ivoire",
+            "badAnswers": [
+                "Mali",
+                "Égypte ",
+                "Maroc"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "666c0884ab1f9aa811c995ce",
+            "question": "Quel phénomène astronomique est décrit par la relativité générale comme une courbure de l'espace-temps causée par une masse ?",
+            "answer": "Lentille gravitationnelle",
+            "badAnswers": [
+                " Gravité quantique",
+                " Trou noir",
+                "Trou de ver"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "666f1da6ab1f9aa811c99bd6",
+            "question": "Qui a été surnommé l entraineur le plus nul du football français depuis Louis XVI?",
+            "answer": "Raymond Domenech",
+            "badAnswers": [
+                "Paul Le Guen",
+                "Pascal Dupraz",
+                "Jocelyn Gourvennec"
+            ],
+            "category": "sport",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "672b533f6350b1adf9270c73",
+            "question": "Comment s'appelle le petit-fils de Raymond Poulidor ?",
+            "answer": "Mathieu van der Poel",
+            "badAnswers": [
+                "Thibault Pinot",
+                "Romain Bardet",
+                "Victor Lafay"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "672b537f6350b1adf9270c75",
+            "question": "Qui possède le numéro 44 en formule 1 ?",
+            "answer": "Lewis Hamilton",
+            "badAnswers": [
+                "Esteban Ocon",
+                "Oscar Piastri",
+                " Valtteri Bottas"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "672b53cf6350b1adf9270c77",
+            "question": "Qui a gagné la coupe du monde de football 1998 ?",
+            "answer": "France",
+            "badAnswers": [
+                "Brésil",
+                "Argentine",
+                "Pérou"
+            ],
+            "category": "sport",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "672b54ab6350b1adf9270c79",
+            "question": "Quel pays est frontalier à la France ?",
+            "answer": "Brésil",
+            "badAnswers": [
+                "Autriche",
+                "Dannemark",
+                "Bulgarie"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "674713f66350b1adf9276bc7",
+            "question": "En quelle année l'équipe de France a-t-elle remportée sa dernière coupe du monde ?",
+            "answer": "2018",
+            "badAnswers": [
+                "2008",
+                "2006",
+                "1998"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "67b856046350b1adf927c03e",
+            "question": "Quel joueur possède le plus de ballon d'or ?",
+            "answer": "Lionel Messi",
+            "badAnswers": [
+                "Neymar Jr",
+                "Cristiano Ronaldo",
+                "Karim Benzema"
+            ],
+            "category": "sport",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "67f55aac6350b1adf9283923",
+            "question": "Qui a écrit Les Misérables ?",
+            "answer": "Victor Hugo",
+            "badAnswers": [
+                "Gustave Flaubert",
+                "Emile Zola",
+                "Molière"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "68404c526350b1adf928ac81",
+            "question": "Dans quel série peut-on entendrela phrase suivante : \"faut arrêter ces conneries de nord et de sud ! Une fois pour toutes, le nord, suivant comment on est tourné, ça change tout !\"\"",
+            "answer": "Kaamelott",
+            "badAnswers": [
+                "Loïs & Clarck",
+                "Caméra Café",
+                "Game of Thrones"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "68404db76350b1adf928ac83",
+            "question": "Quel est le prénom du King des Thrillers/Horreurs ?",
+            "answer": "Stephen",
+            "badAnswers": [
+                "Burger",
+                "Kong",
+                "Elvis"
+            ],
+            "category": "art_litterature",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "684835ad6350b1adf928b26d",
+            "question": "En quelle année a été édité pour la première fois le jeu de société \"Carcassonne\", créé par Klaus-Jürgen Wrede ?",
+            "answer": "2000",
+            "badAnswers": [
+                "1999",
+                "2001",
+                "2002"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "6848603f49b84314be86f448",
+            "question": "Quel est le principal affluent de la Saône ?",
+            "answer": "Le Doubs",
+            "badAnswers": [
+                "L'Ain",
+                "La Creuse",
+                "L'Allier"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848617649b84314be86f458",
+            "question": "De quelle Région française les fest-noz sont-ils des fêtes traditionnelles ?",
+            "answer": "Bretagne",
+            "badAnswers": [
+                "Normandie",
+                "Pays-de-la-Loire",
+                "Grand-Est"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848629549b84314be86f467",
+            "question": "Quel acteur français, lancé au théâtre par Jean Cocteau, a réalisé une sculpture en bronze baptisée \"Le Passe-Muraille\" ?",
+            "answer": "Jean Marais",
+            "badAnswers": [
+                "Yves Montand",
+                "Gérard Philipe",
+                "Jean-Louis Barrault"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "684862e849b84314be86f46a",
+            "question": "Aux États-Unis, combien de présidents américains ont leur portrait taillé dans la roche du Mont Rushmore ?",
+            "answer": "Quatre",
+            "badAnswers": [
+                "Trois",
+                "Cinq",
+                "Six"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848633449b84314be86f46c",
+            "question": "À quelle maison de Poudlard appartient Drago Malefoy, dans les aventures de Harry Potter ?",
+            "answer": "Serpentard",
+            "badAnswers": [
+                "Gryffondor",
+                "Poufsouffle",
+                "Serdaigle"
+            ],
+            "category": "tv_cinema",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "684863f749b84314be86f471",
+            "question": "Comment s'appelle le lac de plus de 8000 km², situé à la frontière du Pérou et de la Bolivie ?",
+            "answer": "Titicaca",
+            "badAnswers": [
+                "Maracaibo",
+                "Poopó",
+                "Atitlán"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "6848648249b84314be86f47e",
+            "question": "Sur quelle île est née Joséphine de Beauharnais ?",
+            "answer": "La Martinique",
+            "badAnswers": [
+                "La Guadeloupe",
+                "La Réunion",
+                "Sainte-Lucie"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848656449b84314be86f482",
+            "question": "Quel auteur écrivit \"Le Chien jaune\" en 1928 ?",
+            "answer": "Georges Simenon",
+            "badAnswers": [
+                "Léo Malet",
+                "Frédéric Dard",
+                "Maurice Leblanc"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "68486e4049b84314be86f49e",
+            "question": "Quel élément du tableau périodique porte le numéro atomique 116 ?",
+            "answer": "Livermorium",
+            "badAnswers": [
+                "Copernicium",
+                "Flerovium",
+                "Moscovium"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "68486e9749b84314be86f4a0",
+            "question": "Quel élément du tableau périodique porte le numéro atomique 99 ?",
+            "answer": "Einsteinium",
+            "badAnswers": [
+                "Fermium",
+                "Californium",
+                "Curium"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "68486f2c49b84314be86f4a3",
+            "question": "Quel élément du tableau périodique porte le numéro atomique 117 ?",
+            "answer": "Tennessine",
+            "badAnswers": [
+                "Livermorium",
+                "Nihonium",
+                "Moscovium"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "6848708749b84314be86f4b4",
+            "question": "Quel élément chimique porte le nom du créateur de la mécanique quantique, prénommé Niels ?",
+            "answer": "Bohrium",
+            "badAnswers": [
+                "Planckium",
+                "Heisenbergium",
+                "Rutherfordium"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848712c49b84314be86f4b9",
+            "question": "Quel est l’exutoire de la rivière Creuse, c’est-à-dire le cours d’eau dans lequel elle se jette ?",
+            "answer": "La Vienne",
+            "badAnswers": [
+                "La Loire",
+                "La Gartempe",
+                "Le Cher"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848716449b84314be86f4bb",
+            "question": "Quel est l’exutoire de la rivière Mayenne, c’est-à-dire le cours d’eau dans lequel elle se jette ?",
+            "answer": "La Maine",
+            "badAnswers": [
+                "La Loire",
+                "La Sarthe",
+                "L’Erdre"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "684871b749b84314be86f4c8",
+            "question": "Quel est l’exutoire de la rivière Drac, c’est-à-dire le cours d’eau dans lequel elle se jette ?",
+            "answer": "L’Isère",
+            "badAnswers": [
+                "La Durance",
+                "Le Rhône",
+                "Le Giffre"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        },
+        {
+            "_id": "684872d349b84314be86f4d9",
+            "question": "Quel est l’exutoire de la rivière Dordogne, c’est-à-dire le cours d’eau dans lequel elle se jette ?",
+            "answer": "L’estuaire de la Gironde",
+            "badAnswers": [
+                "La Charente",
+                "L'Adour",
+                "Le Bassin d'Arcachon"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "_id": "684872ff49b84314be86f4dc",
+            "question": "Dans quelle ville est créée l'entreprise Tefal S.A. en 1956 ?",
+            "answer": "Sarcelles",
+            "badAnswers": [
+                "Thiers",
+                "Annecy",
+                "Saint-Étienne"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848734349b84314be86f4de",
+            "question": "En quelle année a été publié La Tentation de saint Antoine de Gustave Flaubert ?",
+            "answer": "1874",
+            "badAnswers": [
+                "1854",
+                "1914",
+                "1814"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "_id": "6848738749b84314be86f4e0",
+            "question": "Dans Dragon Ball, quel dragon magique apparaît pour exaucer un souhait lorsque les sept Dragon Balls sont réunies ?",
+            "answer": "Shenron",
+            "badAnswers": [
+                "Kaio",
+                "Porunga",
+                "Oozaru"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "En quelle année Natascha Kampusch est elle parvenue à s'échapper après de longues années de séquestration ?",
+            "answer": "2006",
+            "badAnswers": [
+                "1996",
+                "2000",
+                "2003"
+            ],
+            "category": "art_litterature",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel édifice datant du VIIe siècle, lieu le plus sacré de l'islam, est recouvert d'une étoffe de soie noire ?",
+            "answer": "1860",
+            "badAnswers": [
+                "1820",
+                "1920",
+                "1760"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Comment s'appelle la science de l'étude du sang et de ses maladies ?",
+            "answer": "L'hématologie",
+            "badAnswers": [
+                "La cardiologie",
+                "La néphrologie",
+                "L'histologie"
+            ],
+            "category": "culture_generale",
+            "difficulty": "facile"
+        },
+        {
+            "question": "Quel fleuve côtier traverse trois régions différentes et se jette devant le Mont-Saint-Michel ?",
+            "answer": "Le Couesnon ",
+            "badAnswers": [
+                "La Sélune",
+                "La Vire",
+                "La Rance"
+            ],
+            "category": "culture_generale",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quel compositeur, né à Hambourg et mort à Vienne, est parfois considéré comme le « successeur » de Beethoven ?",
+            "answer": "Johannes Brahms",
+            "badAnswers": [
+                "Wolfgang Amadeus Mozart",
+                "Jean-Sébastien Bach",
+                "Frédéric Chopin"
+            ],
+            "category": "musique",
+            "difficulty": "normal"
+        },
+        {
+            "question": "Quelle est la lune la plus large du système solaire ?",
+            "answer": "Ganymède",
+            "badAnswers": [
+                "Titan",
+                "La Lune",
+                "Europe"
+            ],
+            "category": "culture_generale",
+            "difficulty": "difficile"
+        }
+    ]
