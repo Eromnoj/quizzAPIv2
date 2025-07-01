@@ -11,7 +11,7 @@ export const getAllQuizzes = async (req: Request, res: Response) => {
     const quizzes = await getQuizzes();
     res.status(200).json(quizzes);
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la récupération des quiz' });
+    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz' });
   }
 };
 export const createQuiz = async (req: Request, res: Response) => {
@@ -21,18 +21,18 @@ export const createQuiz = async (req: Request, res: Response) => {
     }
     validateQuizz(req.body);
     const quiz = await createQuizz(req.body);
-    res.status(201).json({ message: 'Quiz créé avec succès', quiz });
+    res.status(201).json({ msg: 'Votre question a bien été soumise et est en attente de modération, Merci !', quiz });
   } catch (error: any) {
-    res.status(400).json({ message: 'Erreur lors de la création du quiz', error: JSON.parse(error.message) });
+    res.status(400).json({ msg: 'Erreur lors de la création du quiz', error: JSON.parse(error.msg) });
   }
 };
 export const deleteQuiz = async (req: Request, res: Response) => {
   const quizId = req.params.id;
   try {
     const quiz = await deleteQuizz(quizId);
-    res.status(200).json({ message: 'Quiz supprimé avec succès', quiz });
+    res.status(200).json({ msg: 'Quiz supprimé avec succès', quiz });
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la suppression du quiz' });
+    res.status(500).json({ msg: 'Erreur lors de la suppression du quiz' });
   }
 };
 export const updateQuiz = async (req: Request, res: Response) => {
@@ -40,9 +40,9 @@ export const updateQuiz = async (req: Request, res: Response) => {
   try {
     validateQuizz(req.body);
     const updatedQuiz = await updateQuizz(quizId, req.body);
-    res.status(200).json({ message: 'Quiz mis à jour', quiz: updatedQuiz });
+    res.status(200).json({ msg: 'Quiz mis à jour', quiz: updatedQuiz });
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la mise à jour du quiz' });
+    res.status(500).json({ msg: 'Erreur lors de la mise à jour du quiz' });
   }
 }
 
@@ -51,12 +51,12 @@ export const getOneQuiz = async (req: Request, res: Response) => {
   try {
     const quiz = await getQuizzById(quizId);
     if (!quiz) {
-      res.status(404).json({ message: 'Quiz non trouvé' });
+      res.status(404).json({ msg: 'Quiz non trouvé' });
       return 
     }
     res.status(200).json(quiz);
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la récupération du quiz' });
+    res.status(500).json({ msg: 'Erreur lors de la récupération du quiz' });
   }
 }
 
@@ -68,7 +68,7 @@ export const getFilteredQuizzes = async (req: Request, res: Response) => {
     res.status(200).json(quizzes);
 
   } catch (error: any) {
-    res.status(500).json({ message: 'Erreur lors de la récupération des quiz filtrés', error: error.message });
+    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz filtrés', error: error.msg });
   }
 };
 
@@ -77,6 +77,6 @@ export const getPendingQuizzes = async (req: Request, res: Response) => {
     const quizzes = await getQuizzesPending();
     res.status(200).json(quizzes);
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la récupération des quiz en attente' });
+    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz en attente' });
   }
 }
