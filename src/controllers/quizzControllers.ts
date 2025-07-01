@@ -63,6 +63,9 @@ export const getOneQuiz = async (req: Request, res: Response) => {
 export const getFilteredQuizzes = async (req: Request, res: Response) => {
   const { difficulty, category, limit } = req.query;
 
+  console.log('Difficulty:', difficulty);
+  console.log('Category:', category);
+  console.log('Limit:', limit);
   const categoryId = await prisma.category.findFirst({
     where: {
       slug: category as string,
