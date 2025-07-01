@@ -37,9 +37,10 @@ const app: Express = express();
 // const server = https.createServer({key: key, cert: cert }, app);
 const port = process.env.PORT || 3000;
 app.use(cookieSession({
+  sameSite: 'none',
   name: 'api-auth',
   keys: [process.env.COOKIE_SECRET], // TODO change this to a more secure key
-  maxAge: 30 * 24 * 60 * 60 * 1000
+  maxAge: 30 * 24 * 60 * 60 * 1000,
 }));
 // register regenerate & save after the cookieSession middleware initialization
 app.use(function(request, response, next) {
