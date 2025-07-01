@@ -55,9 +55,14 @@ app.use(function(request, response, next) {
   }
   next()
 })
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  process.env.DEVELOPMENT_FRONTEND_URL,
+];
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
-  credentials: true
+  origin: allowedOrigins,
+  credentials: true, // si tu envoies des cookies ou headers d’authentification
 }));
 
 app.use('/public', express.static('public'));
