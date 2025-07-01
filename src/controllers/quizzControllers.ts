@@ -72,7 +72,7 @@ export const getFilteredQuizzes = async (req: Request, res: Response) => {
     },
   });
   try {
-    const quizzes = await getQuizzesFiltered({difficulty: difficulty as Difficulty, categoryId: categoryId?.id as string, maxResults: Number(limit)});
+    const quizzes = await getQuizzesFiltered({difficulty: difficulty as Difficulty, categoryId: categoryId?.id as string, maxResults: Number(limit), categorySlug: category as string });
     res.status(200).json(quizzes);
 
   } catch (error) {
