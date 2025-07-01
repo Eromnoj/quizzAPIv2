@@ -64,7 +64,7 @@ export const getFilteredQuizzes = async (req: Request, res: Response) => {
   const { difficulty, category, limit } = req.query;
 let categoryData : {id: string | undefined, slug: string | undefined} = {
     id: undefined,
-    slug: undefined,
+    slug: category as string | undefined,
   }
 
   if (typeof category === 'string') {
