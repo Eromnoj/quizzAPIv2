@@ -62,31 +62,9 @@ export const getOneQuiz = async (req: Request, res: Response) => {
 
 export const getFilteredQuizzes = async (req: Request, res: Response) => {
   const { difficulty, category, limit } = req.query;
-let categoryData : {id: string | undefined, slug: string | undefined} = {
-    id: undefined,
-    slug: category as string | undefined,
-  }
-
-  if (typeof category === 'string') {
-    const categoryDataResult = await prisma.category.findFirst({
-      where: {
-        slug: category,
-      },
-      select: {
-        id: true,
-        slug: true,
-      },
-    });
-    if (categoryDataResult) {
-      categoryData = {
-        id: categoryDataResult.id,
-        slug: categoryDataResult.slug,
-      };
-    }
-  } 
-
+  
   try {
-    const quizzes = await getQuizzesFiltered({difficulty: difficulty as Difficulty, categoryId: categoryData.id, maxResults: Number(limit), categorySlug: categoryData.slug });
+    const quizzes = await getQuizzesFiltered({difficulty: difficulty as Difficulty, category: category as string, maxResults: Number(limit),});
     res.status(200).json(quizzes);
 
   } catch (error) {
