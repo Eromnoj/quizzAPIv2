@@ -94,7 +94,7 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
       id: true,
     },
   });
-    where.category = categoryId?.id;
+    where.categoryId = categoryId?.id;
   }
   where.pending = false; // only get quizzes that are not pending
   // get quizzes randomly from all quizzes with the given difficulty and categoryId
