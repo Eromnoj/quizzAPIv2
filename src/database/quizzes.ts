@@ -71,7 +71,7 @@ export async function getQuizzById(id: string) {
   return quiz;
 }
 
-export async function getQuizzesFiltered(data: { difficulty: Difficulty, categoryId: string, maxResults?: number, categorySlug?: string }) {
+export async function getQuizzesFiltered(data: { difficulty: Difficulty, categoryId?: string, maxResults?: number, categorySlug?: string }) {
 
   // if no maxResults is provided, default to 5
   // if (!data.maxResults || data.maxResults <= 0) {
