@@ -36,6 +36,7 @@ const {
 const app: Express = express();
 // const server = https.createServer({key: key, cert: cert }, app);
 const port = process.env.PORT || 3000;
+app.set('trust proxy', 1);
 app.use(cookieSession({
   sameSite: 'none',
   secure: true, // true if using https
