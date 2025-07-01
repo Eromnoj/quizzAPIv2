@@ -74,9 +74,9 @@ export async function getQuizzById(id: string) {
 export async function getQuizzesFiltered(data: { difficulty: Difficulty, categoryId: string, maxResults: number, categorySlug?: string }) {
 
   // if no maxResults is provided, default to 5
-  if (!data.maxResults || data.maxResults <= 0) {
-    data.maxResults = 5;
-  }
+  // if (!data.maxResults || data.maxResults <= 0) {
+  //   data.maxResults = 5;
+  // }
 
   console.log('getQuizzesFiltered', data);
   //where construction if no difficculty or categoryId is provided take from all quizzes
@@ -86,6 +86,9 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
   }
   if (data.categoryId) {
     where.categoryId = data.categoryId;
+  }
+  if (data.maxResults && data.maxResults > 0) {
+    where.maxResults = data.maxResults;
   }
   where.pending = false; // only get quizzes that are not pending
   // get quizzes randomly from all quizzes with the given difficulty and categoryId
@@ -99,6 +102,7 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
       question: quiz.question,
       answer: quiz.answer,
       categoryId: quiz.categoryId,
+      category: data.categorySlug, // if categorySlug is provided, add it to the quiz
       difficulty: quiz.difficulty,
       badAnswers: [
         quiz.badAnswer1,
