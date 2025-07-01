@@ -39,8 +39,6 @@ const port = process.env.PORT || 3000;
 app.use(cookieSession({
   sameSite: 'none',
   secure: true, // true if using https
-  httpOnly: true,
-  overwrite: true,
   name: 'api-auth',
   keys: [process.env.COOKIE_SECRET], // TODO change this to a more secure key
   maxAge: 30 * 24 * 60 * 60 * 1000,
