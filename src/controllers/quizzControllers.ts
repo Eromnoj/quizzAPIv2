@@ -67,8 +67,8 @@ export const getFilteredQuizzes = async (req: Request, res: Response) => {
     const quizzes = await getQuizzesFiltered({difficulty: difficulty as Difficulty, category: category as string, maxResults: Number(limit),});
     res.status(200).json(quizzes);
 
-  } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la récupération des quiz filtrés' });
+  } catch (error: any) {
+    res.status(500).json({ message: 'Erreur lors de la récupération des quiz filtrés', error: error.message });
   }
 };
 
