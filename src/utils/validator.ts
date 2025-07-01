@@ -12,6 +12,11 @@ export const validatePassword = (password: string) => {
     throw new Error('Mot de passe invalide');
   }
 }
+export const validatePasswordConfirm = (password: string, passwordConfirm: string) => {
+  if (!passwordConfirm || password !== passwordConfirm) {
+    throw new Error('La confirmation du mot de passe ne correspond pas');
+  }
+}
 export const validateName = (name: string) => {
   if (!name || !validator.isAlphanumeric(name)) {
     throw new Error('Nom invalide');
@@ -19,6 +24,7 @@ export const validateName = (name: string) => {
 }
 export const usersValidator = (user: UserRegister) => {
   validateEmail(user.email);
+  validatePasswordConfirm(user.password, user.passwordConfirm);
   validatePassword(user.password);
   validateName(user.name);
 }
