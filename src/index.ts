@@ -34,13 +34,13 @@ const {
 
 // const https = require('https');
 const app: Express = express();
+app.set('trust proxy', 1);
 // const server = https.createServer({key: key, cert: cert }, app);
 const port = process.env.PORT || 3000;
 app.use((req, res, next) => {
   console.log('Protocol selon Express :', req.protocol);
   next();
 });
-app.set('trust proxy', 1);
 app.use(cookieSession({
   sameSite: 'none',
   secure: true, // true if using https
