@@ -23,7 +23,7 @@ export const createQuiz = async (req: Request, res: Response) => {
     const quiz = await createQuizz(req.body);
     res.status(201).json({ msg: 'Votre question a bien été soumise et est en attente de modération, Merci !', quiz });
   } catch (error: any) {
-    res.status(400).json({ msg: 'Erreur lors de la création du quiz', error: JSON.parse(error.msg) });
+    res.status(400).json({ msg: 'Erreur lors de la création du quiz', error: error.msg });
   }
 };
 export const deleteQuiz = async (req: Request, res: Response) => {
