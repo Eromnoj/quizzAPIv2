@@ -10,18 +10,28 @@ import {
   getPendingQuizzes 
 } from "../controllers/quizzControllers";
 import { getCategories, getCategoryById } from "../controllers/categoryControllers";
+const cors = require('cors');
+
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+process.env.DEVELOPMENT_FRONTEND_URL,
+];
+const corsOptions = {
+  origin: allowedOrigins,
+  credentials: true,
+};
 
 const quizzRoute= Router();
 
 quizzRoute.post("/", createQuiz);
 quizzRoute.get("/", getFilteredQuizzes);
-quizzRoute.get("/categories", getCategories);
-quizzRoute.get("/categories/:id", getCategoryById);
-quizzRoute.get("/pending", authMW, adminMW, getPendingQuizzes);
-quizzRoute.get("/getAll",authMW, adminMW, getAllQuizzes);
+quizzRoute.get("/categories",  cors(corsOptions), getCategories);
+quizzRoute.get("/categories/:id",  cors(corsOptions),getCategoryById);
+quizzRoute.get("/pending",  cors(corsOptions), authMW, adminMW, getPendingQuizzes);
+quizzRoute.get("/getAll",  cors(corsOptions), authMW, adminMW, getAllQuizzes);
 quizzRoute.get("/:id", getOneQuiz);
-quizzRoute.put("/:id", authMW, adminMW, updateQuiz);
-quizzRoute.delete("/:id", authMW, adminMW, deleteQuiz);
+quizzRoute.put("/:id", cors(corsOptions), authMW, adminMW, updateQuiz);
+quizzRoute.delete("/:id",  cors(corsOptions), authMW, adminMW, deleteQuiz);
 
 
 export default quizzRoute;

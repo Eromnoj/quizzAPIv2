@@ -64,10 +64,18 @@ const allowedOrigins = [
   process.env.DEVELOPMENT_FRONTEND_URL,
 ];
 
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true, // si tu envoies des cookies ou headers d’authentification
-}));
+app.use((req, res, next) => {
+  const noCorsRoutes = ["/api/v2/quiz"];
+
+  if (noCorsRoutes.some(route => req.path.startsWith(route))) {
+    return next();
+  }
+
+  return cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })(req, res, next);
+});
 
 app.use('/public', express.static('public'));
 app.use(express.json())
