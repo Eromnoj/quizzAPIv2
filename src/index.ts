@@ -46,16 +46,16 @@ app.use(cookieSession({
   maxAge: 30 * 24 * 60 * 60 * 1000,
 }));
 // register regenerate & save after the cookieSession middleware initialization
-app.use(function(request, response, next) {
+app.use(function (request, response, next) {
   if (request.session && !request.session.regenerate) {
-      request.session.regenerate = (cb: any) => {
-          cb()
-      }
+    request.session.regenerate = (cb: any) => {
+      cb()
+    }
   }
   if (request.session && !request.session.save) {
-      request.session.save = (cb: any) => {
-          cb()
-      }
+    request.session.save = (cb: any) => {
+      cb()
+    }
   }
   next()
 })
@@ -64,18 +64,11 @@ const allowedOrigins = [
   process.env.DEVELOPMENT_FRONTEND_URL,
 ];
 
-app.use((req, res, next) => {
-  const noCorsRoutes = ["/api/v2/quiz"];
+// app.use(cors({
+//   origin: allowedOrigins,
+//   credentials: true, 
+// }));
 
-  if (noCorsRoutes.some(route => req.path.startsWith(route))) {
-    return next();
-  }
-
-  return cors({
-    origin: allowedOrigins,
-    credentials: true,
-  })(req, res, next);
-});
 
 app.use('/public', express.static('public'));
 app.use(express.json())
@@ -88,14 +81,14 @@ passport.serializeUser((user, done) => {
   done(null, user);
 });
 
-passport.deserializeUser(async (id: {id:string}, done) => {
+passport.deserializeUser(async (id: { id: string }, done) => {
   const user = await prisma.user.findUnique({
     where: {
       id: id.id
     }
   })
   if (user) {
-    return done(null, { id: user.id }); 
+    return done(null, { id: user.id });
   } else {
     return done(new Error("Pas d'utilisateur avec cet ID"));
   }
@@ -123,10 +116,22 @@ passport.use('local', new LocalStrategy({ passReqToCallback: true },
 ))
 
 
-app.use("/api/v2", apiRoutes);
-app.use("/api/v2/auth", authRoutes);
-app.use("/api/v2/recovery", recoveryRoutes);
-app.use("/api/v2/admin", adminRoutes);
+app.use("/api/v2", cors({
+  origin: allowedOrigins,
+  credentials: true, // si tu envoies des cookies ou headers d’authentification
+}), apiRoutes);
+app.use("/api/v2/auth", cors({
+  origin: allowedOrigins,
+  credentials: true, // si tu envoies des cookies ou headers d’authentification
+}), authRoutes);
+app.use("/api/v2/recovery", cors({
+  origin: allowedOrigins,
+  credentials: true, // si tu envoies des cookies ou headers d’authentification
+}), recoveryRoutes);
+app.use("/api/v2/admin", cors({
+  origin: allowedOrigins,
+  credentials: true, // si tu envoies des cookies ou headers d’authentification
+}), adminRoutes);
 app.use("/api/v2/quiz", quizzRoutes);
 
 if (process.env.NODE_ENV !== 'test') {
