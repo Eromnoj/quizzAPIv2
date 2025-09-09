@@ -23,13 +23,13 @@ const corsOptions = {
 
 const quizzRoute= Router();
 
-quizzRoute.post("/", createQuiz);
-quizzRoute.get("/", getFilteredQuizzes);
+quizzRoute.post("/", cors(), createQuiz);
+quizzRoute.get("/",cors(), getFilteredQuizzes);
 quizzRoute.get("/categories",  cors(corsOptions), getCategories);
 quizzRoute.get("/categories/:id",  cors(corsOptions),getCategoryById);
 quizzRoute.get("/pending",  cors(corsOptions), authMW, adminMW, getPendingQuizzes);
 quizzRoute.get("/getAll",  cors(corsOptions), authMW, adminMW, getAllQuizzes);
-quizzRoute.get("/:id", getOneQuiz);
+quizzRoute.get("/:id", cors(), getOneQuiz);
 quizzRoute.put("/:id", cors(corsOptions), authMW, adminMW, updateQuiz);
 quizzRoute.delete("/:id",  cors(corsOptions), authMW, adminMW, deleteQuiz);
 

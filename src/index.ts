@@ -64,12 +64,6 @@ const allowedOrigins = [
   process.env.DEVELOPMENT_FRONTEND_URL,
 ];
 
-// app.use(cors({
-//   origin: allowedOrigins,
-//   credentials: true, 
-// }));
-
-
 app.use('/public', express.static('public'));
 app.use(express.json())
 
@@ -118,19 +112,19 @@ passport.use('local', new LocalStrategy({ passReqToCallback: true },
 
 app.use("/api/v2", cors({
   origin: allowedOrigins,
-  credentials: true, // si tu envoies des cookies ou headers d’authentification
+  credentials: true,
 }), apiRoutes);
 app.use("/api/v2/auth", cors({
   origin: allowedOrigins,
-  credentials: true, // si tu envoies des cookies ou headers d’authentification
+  credentials: true,
 }), authRoutes);
 app.use("/api/v2/recovery", cors({
   origin: allowedOrigins,
-  credentials: true, // si tu envoies des cookies ou headers d’authentification
+  credentials: true,
 }), recoveryRoutes);
 app.use("/api/v2/admin", cors({
   origin: allowedOrigins,
-  credentials: true, // si tu envoies des cookies ou headers d’authentification
+  credentials: true,
 }), adminRoutes);
 app.use("/api/v2/quiz", quizzRoutes);
 
