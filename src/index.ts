@@ -116,7 +116,12 @@ passport.use(
         });
       }
 
-      return done(null, { id: user.id });
+      return done(null, {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+      });
     },
   ),
 );

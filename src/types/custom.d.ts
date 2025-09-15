@@ -1,7 +1,9 @@
-import { User as PrismaUser, Role } from '@prisma/client';
+import { User as PrismaUser, Role } from "@prisma/client";
 
 type UserCookie = {
   id: string;
+  email?: string;
+  name?: string;
   role?: Role;
 };
 declare global {
@@ -9,3 +11,4 @@ declare global {
     interface User extends UserCookie {}
   }
 }
+
