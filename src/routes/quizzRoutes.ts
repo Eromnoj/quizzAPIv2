@@ -8,7 +8,8 @@ import {
   deleteQuiz, 
   getFilteredQuizzes, 
   validationQuiz,
-  getPendingQuizzes 
+  getPendingQuizzes,
+  countQuizzes 
 } from "../controllers/quizzControllers";
 import { getCategories, getCategoryById } from "../controllers/categoryControllers";
 const cors = require('cors');
@@ -25,6 +26,7 @@ const corsOptions = {
 const quizzRoute= Router();
 
 quizzRoute.post("/", cors(corsOptions), createQuiz);
+quizzRoute.get("/count", cors(corsOptions), countQuizzes);
 quizzRoute.get("/",cors(), getFilteredQuizzes);
 quizzRoute.get("/categories",  cors(corsOptions), getCategories);
 quizzRoute.get("/categories/:id",  cors(corsOptions),getCategoryById);
