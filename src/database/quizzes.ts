@@ -91,6 +91,7 @@ export async function countValidQuiz() {
       pending: false
     },
   })
+  console.log(count)
   return count
 }
 
