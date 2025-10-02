@@ -69,6 +69,8 @@ export async function updateQuizz(id: string, data: any) {
   return updatedQuiz;
 }
 export async function switchPendingQuiz(id: string, status: boolean) {
+  console.log(id)
+  console.log(status)
   const validateQuiz = await prisma.quiz.update({
     where: { id },
     data: {
