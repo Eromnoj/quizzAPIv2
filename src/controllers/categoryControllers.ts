@@ -10,6 +10,7 @@ export const getCategories = async (req: Request, res: Response) => {
       select: {
         id: true,
         name: true,
+        slug: true
       },
     });
     res.status(200).json(categories);
