@@ -3,9 +3,16 @@
 import { Request, Response } from 'express';
 import { Difficulty, PrismaClient } from '@prisma/client';
 import { validateQuizz } from '../utils/validator';
-import { createQuizz, deleteQuizz, getQuizzById, getQuizzes, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz } from '../database/quizzes';
-const prisma = new PrismaClient();
+import { createQuizz, deleteQuizz, getQuizzById, getQuizzes, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz , countValidQuiz} from '../database/quizzes';
 
+export const countQuizzes = async (req: Request, res: Response) => {
+   try {
+    const quizzes = await countValidQuiz();
+    res.status(200).json(quizzes);
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz' });
+  }
+}
 export const getAllQuizzes = async (req: Request, res: Response) => {
   try {
     const quizzes = await getQuizzes();

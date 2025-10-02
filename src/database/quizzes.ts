@@ -85,6 +85,14 @@ export async function getQuizzById(id: string) {
   });
   return quiz;
 }
+export async function countValidQuiz() {
+  const count = await prisma.quiz.count({
+    where: {
+      pending: false
+    },
+  })
+  return count
+}
 
 export async function getQuizzesFiltered(data: { difficulty: Difficulty, category?: string, maxResults?: number, categorySlug?: string }) {
 
