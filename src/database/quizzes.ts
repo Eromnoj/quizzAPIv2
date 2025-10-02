@@ -68,6 +68,15 @@ export async function updateQuizz(id: string, data: any) {
   });
   return updatedQuiz;
 }
+export async function switchPendingQuiz(id: string, status: boolean) {
+  const validateQuiz = await prisma.quiz.update({
+    where: { id },
+    data: {
+      pending: status
+    }
+  })
+  return validateQuiz;
+}
 export async function getQuizzById(id: string) {
   const quiz = await prisma.quiz.findUnique({
     where: { id },
@@ -91,13 +100,13 @@ export async function getQuizzesFiltered(data: { difficulty: Difficulty, categor
   }
   if (data.category) {
     const categoryId = await prisma.category.findFirst({
-    where: {
-      slug: data.category as string,
-    },
-    select: {
-      id: true,
-    },
-  });
+      where: {
+        slug: data.category as string,
+      },
+      select: {
+        id: true,
+      },
+    });
     where.categoryId = categoryId?.id;
   }
   where.pending = false; // only get quizzes that are not pending

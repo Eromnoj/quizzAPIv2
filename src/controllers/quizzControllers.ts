@@ -3,7 +3,7 @@
 import { Request, Response } from 'express';
 import { Difficulty, PrismaClient } from '@prisma/client';
 import { validateQuizz } from '../utils/validator';
-import { createQuizz, deleteQuizz, getQuizzById, getQuizzes, updateQuizz, getQuizzesFiltered,getQuizzesPending } from '../database/quizzes';
+import { createQuizz, deleteQuizz, getQuizzById, getQuizzes, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz } from '../database/quizzes';
 const prisma = new PrismaClient();
 
 export const getAllQuizzes = async (req: Request, res: Response) => {
@@ -41,6 +41,15 @@ export const updateQuiz = async (req: Request, res: Response) => {
     validateQuizz(req.body);
     const updatedQuiz = await updateQuizz(quizId, req.body);
     res.status(200).json({ msg: 'Quiz mis à jour', quiz: updatedQuiz });
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la mise à jour du quiz' });
+  }
+}
+export const validationQuiz = async (req: Request, res: Response) => {
+const quizId = req.params.id;
+  try {
+    const updatedQuiz = await switchPendingQuiz(quizId, req.body.status);
+    res.status(200).json({ msg: 'Statut modifié', quiz: updatedQuiz });
   } catch (error) {
     res.status(500).json({ msg: 'Erreur lors de la mise à jour du quiz' });
   }
