@@ -5,7 +5,7 @@ const prisma = new PrismaClient()
 export async function getQuizzes() {
   const quizzes = await prisma.quiz.findMany();
 
-  const retQizzes = quizzes.map(async (quiz) => {
+  const retQizzes = quizzes.map((quiz) => {
     return {
       id: quiz.id,
       question: quiz.question,
