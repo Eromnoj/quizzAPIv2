@@ -47,6 +47,8 @@ export const updateQuiz = async (req: Request, res: Response) => {
 }
 export const validationQuiz = async (req: Request, res: Response) => {
 const quizId = req.params.id;
+console.log(quizId)
+console.log(req.body)
   try {
     const updatedQuiz = await switchPendingQuiz(quizId, req.body.status);
     res.status(200).json({ msg: 'Statut modifié', quiz: updatedQuiz });
