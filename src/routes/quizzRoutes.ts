@@ -7,6 +7,7 @@ import {
   updateQuiz, 
   deleteQuiz, 
   getFilteredQuizzes, 
+  validationQuiz,
   getPendingQuizzes 
 } from "../controllers/quizzControllers";
 import { getCategories, getCategoryById } from "../controllers/categoryControllers";
@@ -28,7 +29,7 @@ quizzRoute.get("/",cors(), getFilteredQuizzes);
 quizzRoute.get("/categories",  cors(corsOptions), getCategories);
 quizzRoute.get("/categories/:id",  cors(corsOptions),getCategoryById);
 quizzRoute.get("/pending",  cors(corsOptions), authMW, adminMW, getPendingQuizzes);
-quizzRoute.put("/pending/:id", cors(corsOptions), authMW, adminMW, updateQuiz);
+quizzRoute.put("/pending/:id", cors(corsOptions), authMW, adminMW, validationQuiz);
 quizzRoute.get("/getAll",  cors(corsOptions), authMW, adminMW, getAllQuizzes);
 quizzRoute.get("/:id", cors(), getOneQuiz);
 quizzRoute.put("/:id", cors(corsOptions), authMW, adminMW, updateQuiz);
