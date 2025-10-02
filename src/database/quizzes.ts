@@ -16,7 +16,10 @@ export async function getQuizzes() {
         quiz.badAnswer1,
         quiz.badAnswer2,
         quiz.badAnswer3,
-      ]
+      ],
+      pending: quiz.pending,
+      createdAt: quiz.createdAt,
+      updatedAt: quiz.updatedAt
     }
   });
 
