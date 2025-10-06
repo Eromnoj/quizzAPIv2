@@ -7,3 +7,4 @@ node_modules
 /dist
 
 /prisma/migrations
+/db_docker

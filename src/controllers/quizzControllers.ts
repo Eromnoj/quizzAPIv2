@@ -1,9 +1,9 @@
 //manage Quizzes
 
 import { Request, Response } from 'express';
-import { Difficulty, PrismaClient } from '@prisma/client';
+import { Difficulty } from '@prisma/client';
 import { validateQuizz } from '../utils/validator';
-import { createQuizz, deleteQuizz, getQuizzById, getQuizzes, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz , countValidQuiz} from '../database/quizzes';
+import { createQuizz, deleteQuizz, getQuizzById, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz , countValidQuiz, getQuizzesPaginationFiltered} from '../database/quizzes';
 
 export const countQuizzes = async (req: Request, res: Response) => {
    try {
@@ -14,11 +14,21 @@ export const countQuizzes = async (req: Request, res: Response) => {
   }
 }
 export const getAllQuizzes = async (req: Request, res: Response) => {
+  const { search = "", category = "", difficulty = "" } = req.query as Record<string, string>;
+  const page = parseInt((req.query.page as string) ?? "", 10) || 1;
+  const limit = parseInt((req.query.limit as string) ?? "", 10) || 10;
+
   try {
-    const quizzes = await getQuizzes();
-    res.status(200).json(quizzes);
-  } catch (error) {
-    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz' });
+    const result = await getQuizzesPaginationFiltered({
+      search,
+      category,
+      difficulty: (difficulty as unknown as Difficulty) || undefined,
+      page,
+      limit,
+    });
+    res.status(200).json(result);
+  } catch (error: any) {
+    res.status(500).json({ msg: "Erreur lors de la récupération des quiz", error: error?.message });
   }
 };
 export const createQuiz = async (req: Request, res: Response) => {

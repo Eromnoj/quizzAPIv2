@@ -1,5 +1,6 @@
 import { Difficulty, PrismaClient, Role } from '@prisma/client'
 import { count } from 'console';
+import { contains } from 'validator';
 const prisma = new PrismaClient()
 
 export async function getQuizzes() {
@@ -180,4 +181,50 @@ export async function getQuizzesPending() {
     },
   });
   return quizzes;
+}
+
+export async function getQuizzesPaginationFiltered({
+  search,
+  category,
+  difficulty,
+  page,
+  limit,
+}: {
+  search?: string;
+  category?: string;
+  difficulty?: Difficulty;
+  page?: number;
+  limit?: number;
+}) {
+  const pageNum = Number.isFinite(page as number) && (page as number) > 0 ? (page as number) : 1;
+  const limitNum = Number.isFinite(limit as number) && (limit as number) > 0 ? (limit as number) : 10;
+
+  const where = {
+    ...(difficulty ? { difficulty } : {}),
+    ...(category ? { categoryId: category } : {}),
+    ...(search
+      ? {
+          OR: [
+            { id: { contains: search } },
+            { question: { contains: search } },
+            { answer: { contains: search } },
+            { badAnswer1: { contains: search } },
+            { badAnswer2: { contains: search } },
+            { badAnswer3: { contains: search } },
+          ],
+        }
+      : {}),
+  };
+
+  const [quizzes, count] = await Promise.all([
+    prisma.quiz.findMany({
+      where,
+      skip: (pageNum - 1) * limitNum,
+      take: limitNum,
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.quiz.count({ where }),
+  ]);
+
+  return { quizzes, count, page: pageNum, totalPages: Math.ceil(count / limitNum) };
 }
