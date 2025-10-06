@@ -45,7 +45,6 @@ Toutes les routes ci‑dessous sont préfixées par `/api/v2`.
 
 Public / Utilitaires
 - `GET /csrf`: génère un token CSRF (cookie `csrf-token` + `token` dans la réponse).
-- `GET /test`: vérification simple de l’API.
 - `GET /user`: informations de l’utilisateur courant (auth requise).
 
 Auth
