@@ -135,3 +135,8 @@ Administration — Catégories
 - Base de données: Prisma (MySQL). Modèles: `User`, `Category`, `Quiz`, `Recovery`.
 
 Pour toute question ou amélioration, ouvrez une issue ou PR.
+
+## Clients
+
+- Postman: importer `docs/QuizAPI.postman_collection.json` et définir la variable `baseUrl` (ex: `http://localhost:3000`).
+- Swagger (OpenAPI): `docs/openapi.yaml`. Vous pouvez l’ouvrir avec un viewer (ex: Swagger UI) ou l’importer dans Postman/Insomnia.

@@ -1,0 +1,253 @@
+openapi: 3.0.3
+info:
+  title: Quiz API v2
+  version: 0.1.0
+  description: |
+    API francophone pour récupérer et modérer des quiz.
+    Les requêtes d'écriture nécessitent CSRF + session (cookie).
+servers:
+  - url: http://localhost:3000
+    description: Local
+  - url: https://your-domain
+    description: Production
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: api-auth
+    csrfToken:
+      type: apiKey
+      in: header
+      name: x-csrf-token
+  schemas:
+    Category:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        slug: { type: string }
+    Quiz:
+      type: object
+      properties:
+        id: { type: string }
+        question: { type: string }
+        answer: { type: string }
+        badAnswers:
+          type: array
+          items: { type: string }
+        category: { type: string, description: "slug de catégorie" }
+        categoryId: { type: string }
+        difficulty:
+          type: string
+          enum: [facile, normal, difficile]
+    QuizListResponse:
+      type: object
+      properties:
+        count: { type: integer }
+        quizzes:
+          type: array
+          items: { $ref: '#/components/schemas/Quiz' }
+    RegisterBody:
+      type: object
+      required: [name, email, password, passwordConfirm]
+      properties:
+        name: { type: string }
+        email: { type: string, format: email }
+        password: { type: string }
+        passwordConfirm: { type: string }
+    LoginBody:
+      type: object
+      required: [username, password]
+      properties:
+        username: { type: string, format: email, description: "email" }
+        password: { type: string }
+    CreateQuizBody:
+      type: object
+      required: [question, answer, badAnswer1, badAnswer2, badAnswer3, categoryId, difficulty]
+      properties:
+        question: { type: string }
+        answer: { type: string }
+        badAnswer1: { type: string }
+        badAnswer2: { type: string }
+        badAnswer3: { type: string }
+        categoryId: { type: string }
+        difficulty:
+          type: string
+          enum: [facile, normal, difficile]
+paths:
+  /api/v2/csrf:
+    get:
+      summary: Obtenir un token CSRF
+      responses:
+        '200':
+          description: Token généré
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token: { type: string }
+  /api/v2/quiz:
+    get:
+      summary: Récupérer des quiz validés (aléatoires)
+      parameters:
+        - in: query
+          name: difficulty
+          schema: { type: string, enum: [facile, normal, difficile] }
+        - in: query
+          name: category
+          schema: { type: string }
+          description: slug de catégorie
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1 }
+      responses:
+        '200':
+          description: Liste de quiz
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/QuizListResponse' }
+    post:
+      summary: Proposer un quiz (non-admin => pending)
+      security:
+        - csrfToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CreateQuizBody' }
+      responses:
+        '201': { description: Quiz créé (peut être en attente) }
+  /api/v2/quiz/{id}:
+    get:
+      summary: Récupérer un quiz par ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: Quiz trouvé }
+        '404': { description: Non trouvé }
+    put:
+      summary: Mettre à jour un quiz (admin)
+      security:
+        - cookieAuth: []
+        - csrfToken: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CreateQuizBody' }
+      responses:
+        '200': { description: Quiz mis à jour }
+    delete:
+      summary: Supprimer un quiz (admin)
+      security:
+        - cookieAuth: []
+        - csrfToken: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: Supprimé }
+  /api/v2/quiz/categories:
+    get:
+      summary: Lister les catégories
+      responses:
+        '200':
+          description: Catégories
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Category' }
+  /api/v2/quiz/categories/{id}:
+    get:
+      summary: Récupérer une catégorie par ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: OK }
+        '404': { description: Non trouvé }
+  /api/v2/quiz/count:
+    get:
+      summary: Compter les quiz validés
+      responses:
+        '200': { description: Nombre total }
+  /api/v2/auth/register:
+    post:
+      summary: Créer un compte
+      security:
+        - csrfToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/RegisterBody' }
+      responses:
+        '201': { description: Utilisateur créé }
+        '400': { description: Données invalides }
+  /api/v2/auth/login:
+    post:
+      summary: Ouvrir une session
+      security:
+        - csrfToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginBody' }
+      responses:
+        '200': { description: Connecté (cookie de session) }
+        '401': { description: Identifiants invalides }
+  /api/v2/auth/logout:
+    post:
+      summary: Fermer la session
+      security:
+        - cookieAuth: []
+        - csrfToken: []
+      responses:
+        '200': { description: Déconnecté }
+  /api/v2/recovery/send-mail:
+    get:
+      summary: Envoyer un email de récupération
+      security:
+        - csrfToken: []
+      parameters:
+        - in: query
+          name: email
+          required: false
+          schema: { type: string }
+      responses:
+        '200': { description: Email envoyé }
+  /api/v2/recovery/recover-password:
+    post:
+      summary: Réinitialiser le mot de passe
+      security:
+        - csrfToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token, email, newPassword]
+              properties:
+                token: { type: string }
+                email: { type: string }
+                newPassword: { type: string }
+      responses:
+        '200': { description: Mot de passe mis à jour }
+
