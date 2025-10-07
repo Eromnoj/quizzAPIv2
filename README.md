@@ -86,6 +86,14 @@ Quiz — Proposer / Modérer
 - `PUT /quiz/:id`: met à jour un quiz (admin requis).
 - `DELETE /quiz/:id`: supprime un quiz (admin requis).
 
+Quiz — Signalements
+- `POST /quiz/:id/report`: signale un quiz (CSRF requis, session facultative).
+  - Body: `{ reason }`
+  - À partir de 5 signalements, le quiz repasse en validation (`pending: true`).
+- `GET /quiz/reported`: liste les quiz signalés avec leurs rapports (admin requis).
+- `DELETE /quiz/reports/:reportId`: supprime un rapport précis (admin requis).
+- `DELETE /quiz/:id/reports`: purge tous les rapports liés à un quiz (admin requis).
+
 Administration — Utilisateurs
 - `GET /admin/users`: liste des utilisateurs (admin).
 - `GET /admin/users/:id`: détail d’un utilisateur (admin).
@@ -144,4 +152,3 @@ Pour toute question ou amélioration, ouvrez une issue ou PR.
 ## Licence et conditions d'utilisation
 
 Ce projet est fourni sous la licence [PolyForm Noncommercial 1.0.0](LICENSE). L'API publique est disponible uniquement pour des usages non commerciaux avec attribution obligatoire (voir `TERMS.md`).
-
