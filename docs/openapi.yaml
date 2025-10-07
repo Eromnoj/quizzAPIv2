@@ -75,6 +75,13 @@ components:
         difficulty:
           type: string
           enum: [facile, normal, difficile]
+    ReportQuizBody:
+      type: object
+      required: [reason]
+      properties:
+        reason:
+          type: string
+          description: Motif du signalement
 paths:
   /api/v2/csrf:
     get:
@@ -159,6 +166,23 @@ paths:
           schema: { type: string }
       responses:
         '200': { description: Supprimé }
+  /api/v2/quiz/{id}/report:
+    post:
+      summary: Signaler un quiz
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ReportQuizBody' }
+      responses:
+        '201': { description: Signalement enregistré }
+        '400': { description: Motif manquant }
+        '404': { description: Quiz introuvable }
   /api/v2/quiz/categories:
     get:
       summary: Lister les catégories

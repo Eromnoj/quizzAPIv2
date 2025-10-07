@@ -2,6 +2,7 @@
 
 import { Request, Response } from 'express';
 import { Difficulty } from '@prisma/client';
+import { createQuizReport } from '../database/quizReports';
 import { validateQuizz } from '../utils/validator';
 import { createQuizz, deleteQuizz, getQuizzById, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz , countValidQuiz, getQuizzesPaginationFiltered} from '../database/quizzes';
 
@@ -108,3 +109,26 @@ export const getPendingQuizzes = async (req: Request, res: Response) => {
     res.status(500).json({ msg: 'Erreur lors de la récupération des quiz en attente' });
   }
 }
+export const reportQuiz = async (req: Request, res: Response) => {
+  const quizId = req.params.id;
+  const reason = typeof req.body?.reason === 'string' ? req.body.reason.trim() : '';
+
+  if (!reason) {
+    res.status(400).json({ msg: 'Le motif de signalement est obligatoire.' });
+    return;
+  }
+
+  try {
+    const quiz = await getQuizzById(quizId);
+    if (!quiz) {
+      res.status(404).json({ msg: 'Quiz non trouvé' });
+      return;
+    }
+
+    const report = await createQuizReport(quizId, reason);
+    res.status(201).json({ msg: 'Signalement enregistré, merci.', report });
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la création du signalement' });
+  }
+};
+

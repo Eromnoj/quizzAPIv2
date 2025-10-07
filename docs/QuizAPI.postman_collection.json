@@ -4,7 +4,10 @@
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
-    { "key": "baseUrl", "value": "http://localhost:3000" }
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
   ],
   "item": [
     {
@@ -44,8 +47,14 @@
           "request": {
             "method": "POST",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -59,8 +68,14 @@
           "request": {
             "method": "POST",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -73,7 +88,12 @@
           "name": "Logout",
           "request": {
             "method": "POST",
-            "header": [ {"key":"x-csrf-token","value":"{{csrfToken}}"} ],
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
             "url": "{{baseUrl}}/api/v2/auth/logout"
           }
         }
@@ -87,8 +107,14 @@
           "request": {
             "method": "GET",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -102,8 +128,14 @@
           "request": {
             "method": "POST",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -124,10 +156,51 @@
             "url": "{{baseUrl}}/api/v2/quiz?difficulty=facile&category=histoire&limit=10"
           }
         },
-        { "name": "Get quiz by id", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}" } },
-        { "name": "Get categories", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/quiz/categories" } },
-        { "name": "Get category by id", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/quiz/categories/{{categoryId}}" } },
-        { "name": "Count quizzes", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/quiz/count" } }
+        {
+          "name": "Get quiz by id",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}"
+          }
+        },
+        {
+          "name": "Get categories",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/quiz/categories"
+          }
+        },
+        {
+          "name": "Get category by id",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/quiz/categories/{{categoryId}}"
+          }
+        },
+        {
+          "name": "Count quizzes",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/quiz/count"
+          }
+        },
+        {
+          "name": "Report quiz",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reason\": \"Réponse incorrecte\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}/report"
+          }
+        }
       ]
     },
     {
@@ -138,8 +211,14 @@
           "request": {
             "method": "POST",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -150,17 +229,30 @@
         },
         {
           "name": "List pending (admin)",
-          "request": { "method": "GET", "header": [], "url": "{{baseUrl}}/api/v2/quiz/pending" }
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v2/quiz/pending"
+          }
         },
         {
           "name": "Validate/Unvalidate pending (admin)",
           "request": {
             "method": "PUT",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
-            "body": { "mode": "raw", "raw": "{\n  \"status\": false\n}" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": false\n}"
+            },
             "url": "{{baseUrl}}/api/v2/quiz/pending/{{quizId}}"
           }
         },
@@ -176,8 +268,14 @@
           "request": {
             "method": "PUT",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -190,7 +288,12 @@
           "name": "Delete quiz (admin)",
           "request": {
             "method": "DELETE",
-            "header": [ {"key":"x-csrf-token","value":"{{csrfToken}}"} ],
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
             "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}"
           }
         }
@@ -199,14 +302,26 @@
     {
       "name": "Admin - Users",
       "item": [
-        { "name": "List users", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/admin/users" } },
+        {
+          "name": "List users",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/admin/users"
+          }
+        },
         {
           "name": "Create user",
           "request": {
             "method": "POST",
             "header": [
-              {"key":"Content-Type","value":"application/json"},
-              {"key":"x-csrf-token","value":"{{csrfToken}}"}
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -215,9 +330,47 @@
             "url": "{{baseUrl}}/api/v2/admin/users"
           }
         },
-        { "name": "Get user by id", "request": { "method": "GET", "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}" } },
-        { "name": "Delete user", "request": { "method": "DELETE", "header": [ {"key":"x-csrf-token","value":"{{csrfToken}}"} ], "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}" } },
-        { "name": "Update role", "request": { "method": "PUT", "header": [ {"key":"Content-Type","value":"application/json"}, {"key":"x-csrf-token","value":"{{csrfToken}}"} ], "body": {"mode":"raw","raw":"{\n  \"role\": \"ADMIN\"\n}"}, "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}/role" } }
+        {
+          "name": "Get user by id",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}"
+          }
+        },
+        {
+          "name": "Delete user",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}"
+          }
+        },
+        {
+          "name": "Update role",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"role\": \"ADMIN\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v2/admin/users/{{userId}}/role"
+          }
+        }
       ]
     },
     {
@@ -227,8 +380,20 @@
           "name": "Create category",
           "request": {
             "method": "POST",
-            "header": [ {"key":"Content-Type","value":"application/json"}, {"key":"x-csrf-token","value":"{{csrfToken}}"} ],
-            "body": { "mode":"raw", "raw": "{\n  \"name\": \"Histoire\"\n}" },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Histoire\"\n}"
+            },
             "url": "{{baseUrl}}/api/v2/admin/categories"
           }
         },
@@ -236,8 +401,20 @@
           "name": "Update category",
           "request": {
             "method": "PUT",
-            "header": [ {"key":"Content-Type","value":"application/json"}, {"key":"x-csrf-token","value":"{{csrfToken}}"} ],
-            "body": { "mode":"raw", "raw": "{\n  \"name\": \"Géographie\"\n}" },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Géographie\"\n}"
+            },
             "url": "{{baseUrl}}/api/v2/admin/categories/{{categoryId}}"
           }
         },
@@ -245,7 +422,12 @@
           "name": "Delete category",
           "request": {
             "method": "DELETE",
-            "header": [ {"key":"x-csrf-token","value":"{{csrfToken}}"} ],
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
             "url": "{{baseUrl}}/api/v2/admin/categories/{{categoryId}}"
           }
         }
@@ -253,4 +435,3 @@
     }
   ]
 }
-
