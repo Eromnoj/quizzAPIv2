@@ -140,3 +140,8 @@ Pour toute question ou amélioration, ouvrez une issue ou PR.
 
 - Postman: importer `docs/QuizAPI.postman_collection.json` et définir la variable `baseUrl` (ex: `http://localhost:3000`).
 - Swagger (OpenAPI): `docs/openapi.yaml`. Vous pouvez l’ouvrir avec un viewer (ex: Swagger UI) ou l’importer dans Postman/Insomnia.
+
+## Licence et conditions d'utilisation
+
+Ce projet est fourni sous la licence [PolyForm Noncommercial 1.0.0](LICENSE). L'API publique est disponible uniquement pour des usages non commerciaux avec attribution obligatoire (voir `TERMS.md`).
+
