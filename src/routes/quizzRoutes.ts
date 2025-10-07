@@ -30,7 +30,7 @@ const corsOptions = {
 const quizzRoute= Router();
 
 quizzRoute.post("/", cors(corsOptions), createQuiz);
-quizzRoute.post("/:id/report", reportQuiz);
+quizzRoute.post("/:id/report", cors(), reportQuiz);
 quizzRoute.get("/count", cors(corsOptions), countQuizzes);
 quizzRoute.get("/",cors(), getFilteredQuizzes);
 quizzRoute.get("/categories",  cors(corsOptions), getCategories);
