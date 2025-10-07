@@ -82,6 +82,31 @@ components:
         reason:
           type: string
           description: Motif du signalement
+    QuizReport:
+      type: object
+      properties:
+        id: { type: string }
+        reason: { type: string }
+        createdAt: { type: string, format: date-time }
+        quizId: { type: string }
+    ReportedQuiz:
+      type: object
+      properties:
+        id: { type: string }
+        question: { type: string }
+        answer: { type: string }
+        badAnswer1: { type: string }
+        badAnswer2: { type: string }
+        badAnswer3: { type: string }
+        difficulty: { type: string, enum: [facile, normal, difficile] }
+        pending: { type: boolean }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        categoryId: { type: string }
+        category: { $ref: '#/components/schemas/Category' }
+        reports:
+          type: array
+          items: { $ref: '#/components/schemas/QuizReport' }
 paths:
   /api/v2/csrf:
     get:
@@ -126,6 +151,19 @@ paths:
             schema: { $ref: '#/components/schemas/CreateQuizBody' }
       responses:
         '201': { description: Quiz créé (peut être en attente) }
+  /api/v2/quiz/{id}/reports:
+    delete:
+      summary: Supprimer tous les signalements d'un quiz
+      security:
+        - cookieAuth: []
+        - csrfToken: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: Signalements supprimés }
   /api/v2/quiz/{id}:
     get:
       summary: Récupérer un quiz par ID
@@ -169,6 +207,8 @@ paths:
   /api/v2/quiz/{id}/report:
     post:
       summary: Signaler un quiz
+      security:
+        - csrfToken: []
       parameters:
         - in: path
           name: id
@@ -180,7 +220,7 @@ paths:
           application/json:
             schema: { $ref: '#/components/schemas/ReportQuizBody' }
       responses:
-        '201': { description: Signalement enregistré }
+        '201': { description: 'Signalement enregistré (≥5 signalements : quiz repasse en attente de validation)' }
         '400': { description: Motif manquant }
         '404': { description: Quiz introuvable }
   /api/v2/quiz/categories:
@@ -205,11 +245,40 @@ paths:
       responses:
         '200': { description: OK }
         '404': { description: Non trouvé }
+  /api/v2/quiz/reported:
+    get:
+      summary: Lister les quiz avec signalement
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Quiz signalés
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/ReportedQuiz' }
+        '401': { description: Non autorisé }
+        '500': { description: Erreur serveur }
   /api/v2/quiz/count:
     get:
       summary: Compter les quiz validés
       responses:
         '200': { description: Nombre total }
+  /api/v2/quiz/reports/{reportId}:
+    delete:
+      summary: Supprimer un signalement spécifique
+      security:
+        - cookieAuth: []
+        - csrfToken: []
+      parameters:
+        - in: path
+          name: reportId
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: Signalement supprimé }
+        '404': { description: Signalement introuvable }
   /api/v2/auth/register:
     post:
       summary: Créer un compte

@@ -192,13 +192,18 @@
               {
                 "key": "Content-Type",
                 "value": "application/json"
+              },
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"reason\": \"Réponse incorrecte\"\n}"
             },
-            "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}/report"
+            "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}/report",
+            "description": "Ajoute un signalement. À partir de 5 signalements, le quiz repasse en validation (pending=true)."
           }
         }
       ]
@@ -295,6 +300,43 @@
               }
             ],
             "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}"
+          }
+        },
+        {
+          "name": "Get reported quizzes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v2/quiz/reported",
+            "description": "Liste des quiz ayant au moins un signalement (admin)."
+          }
+        },
+        {
+          "name": "Delete report",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v2/quiz/reports/{{reportId}}",
+            "description": "Supprime un signalement précis (admin)."
+          }
+        },
+        {
+          "name": "Clear quiz reports",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-csrf-token",
+                "value": "{{csrfToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v2/quiz/{{quizId}}/reports",
+            "description": "Supprime tous les signalements pour un quiz donné (admin)."
           }
         }
       ]
