@@ -68,4 +68,16 @@ model Quiz {
   updatedAt  DateTime  @updatedAt
   categoryId String
   category   Category @relation(fields: [categoryId], references: [id])
+  reports   QuizReport[]
+}
+
+
+model QuizReport {
+  id        String   @id @default(cuid())
+  reason    String   @db.Text
+  createdAt DateTime @default(now())
+  quizId    String
+  quiz      Quiz     @relation(fields: [quizId], references: [id])
+
+  @@index([quizId])
 }

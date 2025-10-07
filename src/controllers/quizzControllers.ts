@@ -2,6 +2,7 @@
 
 import { Request, Response } from 'express';
 import { Difficulty } from '@prisma/client';
+import { createQuizReport, getReportedQuizzes, deleteQuizReport, deleteQuizReports } from '../database/quizReports';
 import { validateQuizz } from '../utils/validator';
 import { createQuizz, deleteQuizz, getQuizzById, updateQuizz, getQuizzesFiltered,getQuizzesPending, switchPendingQuiz , countValidQuiz, getQuizzesPaginationFiltered} from '../database/quizzes';
 
@@ -108,3 +109,61 @@ export const getPendingQuizzes = async (req: Request, res: Response) => {
     res.status(500).json({ msg: 'Erreur lors de la récupération des quiz en attente' });
   }
 }
+export const reportQuiz = async (req: Request, res: Response) => {
+  const quizId = req.params.id;
+  const reason = typeof req.body?.reason === 'string' ? req.body.reason.trim() : '';
+
+  if (!reason) {
+    res.status(400).json({ msg: 'Le motif de signalement est obligatoire.' });
+    return;
+  }
+
+  try {
+    const quiz = await getQuizzById(quizId);
+    if (!quiz) {
+      res.status(404).json({ msg: 'Quiz non trouvé' });
+      return;
+    }
+
+    const { report, reportsCount, pendingReset } = await createQuizReport(quizId, reason);
+    const message = pendingReset
+      ? 'Signalement enregistré, le quiz repasse en modération.'
+      : 'Signalement enregistré, merci.';
+    res.status(201).json({ msg: message, report, reportsCount, pendingReset });
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la création du signalement' });
+  }
+};
+export const getReportedQuizzesList = async (req: Request, res: Response) => {
+  try {
+    const quizzes = await getReportedQuizzes();
+    res.status(200).json(quizzes);
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la récupération des quiz signalés' });
+  }
+};
+
+export const deleteOneQuizReport = async (req: Request, res: Response) => {
+  const reportId = req.params.reportId;
+  try {
+    const report = await deleteQuizReport(reportId);
+    res.status(200).json({ msg: 'Signalement supprimé', report });
+  } catch (error: any) {
+    if (error?.code === 'P2025') {
+      res.status(404).json({ msg: 'Signalement introuvable' });
+      return;
+    }
+    res.status(500).json({ msg: 'Erreur lors de la suppression du signalement' });
+  }
+};
+
+export const deleteQuizReportsByQuiz = async (req: Request, res: Response) => {
+  const quizId = req.params.id;
+  try {
+    const result = await deleteQuizReports(quizId);
+    res.status(200).json({ msg: 'Signalements supprimés', deleted: result.count });
+  } catch (error) {
+    res.status(500).json({ msg: 'Erreur lors de la suppression des signalements' });
+  }
+};
+

@@ -9,7 +9,11 @@ import {
   getFilteredQuizzes, 
   validationQuiz,
   getPendingQuizzes,
-  countQuizzes 
+  countQuizzes,
+  reportQuiz,
+  getReportedQuizzesList,
+  deleteOneQuizReport,
+  deleteQuizReportsByQuiz 
 } from "../controllers/quizzControllers";
 import { getCategories, getCategoryById } from "../controllers/categoryControllers";
 const cors = require('cors');
@@ -26,6 +30,7 @@ const corsOptions = {
 const quizzRoute= Router();
 
 quizzRoute.post("/", cors(corsOptions), createQuiz);
+quizzRoute.post("/:id/report", cors(), reportQuiz);
 quizzRoute.get("/count", cors(corsOptions), countQuizzes);
 quizzRoute.get("/",cors(), getFilteredQuizzes);
 quizzRoute.get("/categories",  cors(corsOptions), getCategories);
@@ -33,6 +38,9 @@ quizzRoute.get("/categories/:id",  cors(corsOptions),getCategoryById);
 quizzRoute.get("/pending",  cors(corsOptions), authMW, adminMW, getPendingQuizzes);
 quizzRoute.put("/pending/:id", cors(corsOptions), authMW, adminMW, validationQuiz);
 quizzRoute.get("/getAll",  cors(corsOptions), authMW, adminMW, getAllQuizzes);
+quizzRoute.get("/reported", cors(corsOptions), authMW, adminMW, getReportedQuizzesList);
+quizzRoute.delete("/reports/:reportId", cors(corsOptions), authMW, adminMW, deleteOneQuizReport);
+quizzRoute.delete("/:id/reports", cors(corsOptions), authMW, adminMW, deleteQuizReportsByQuiz);
 quizzRoute.get("/:id", cors(), getOneQuiz);
 quizzRoute.put("/:id", cors(corsOptions), authMW, adminMW, updateQuiz);
 quizzRoute.delete("/:id",  cors(corsOptions), authMW, adminMW, deleteQuiz);
