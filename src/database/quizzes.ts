@@ -221,7 +221,7 @@ export async function getQuizzesPaginationFiltered({
       where,
       skip: (pageNum - 1) * limitNum,
       take: limitNum,
-      orderBy: { createdAt: "desc" },
+      orderBy: { createdAt: "desc", id: "asc" },
     }),
     prisma.quiz.count({ where }),
   ]);
