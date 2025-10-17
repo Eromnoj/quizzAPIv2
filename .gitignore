@@ -7,3 +7,6 @@ node_modules
 /dist
 
 /db_docker
+
+/src/database/feed/default/categories.json
+/src/database/feed/default/questions.json
