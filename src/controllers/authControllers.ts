@@ -20,7 +20,7 @@ export const register = async (req: Request, res: Response) => {
         await prisma.$disconnect()
       })
   } catch (error: any) {
-    res.status(403).send({ error: "Erreur lors de l'enregistrement", message: JSON.parse(error.message) });
+    res.status(403).send({ error: "Erreur lors de l'enregistrement", message: error.message });
   }
 
 }
