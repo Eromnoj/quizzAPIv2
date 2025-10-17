@@ -23,9 +23,14 @@ export const createCategory = async (req: Request, res: Response) => {
   const { name } = req.body;
   try {
     const category = await prisma.category.create({
-      data: { name,
-        slug: name.toLowerCase().replace(/\s+/g, '_').replace(/[^\w-]+/g, '')  // Slugify the name
-       },
+      data: {
+        name,
+        slug: name.toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/\s+/g, '_')
+          .replace(/[^\w-]+/g, '')
+      },
     });
     res.status(201).json({ message: 'Catégorie créée avec succès', category });
   } catch (error) {
@@ -72,7 +77,7 @@ export const getCategoryById = async (req: Request, res: Response) => {
     });
     if (!category) {
       res.status(404).json({ message: 'Catégorie non trouvée' });
-      return 
+      return
     }
     res.status(200).json(category);
   } catch (error) {
